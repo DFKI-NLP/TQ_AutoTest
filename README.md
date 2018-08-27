@@ -1,7 +1,7 @@
-# TQ AutoTest Project
+<h1> TQ AutoTest Project </h1>
 
-source => the source code
-example => sample text
-database => database dump needed to run the app
+<p>source => the source code</p>
+<p>example => sample text</p>
+<p>database => database dump needed to run the app</p>
 
-License => MIT?
+<p>License => MIT?</p>
