@@ -1,0 +1,138 @@
+@main(5) {
+
+    <style>
+            .alert{padding:15px;margin-bottom:20px;border:1px solid transparent;border-radius:4px}.alert-info{color:#31708f;background-color:#d9edf7;border-color:#bce8f1}.alert-danger{color:#a94442;background-color:#f2dede;border-color:#ebccd1}.alert-warning{color:#8a6d3b;background-color:#fcf8e3;border-color:#faebcc}.alert-success{color:#3c763d;background-color:#dff0d8;border-color:#d6e9c6}.close{float:right;font-size:21px;font-weight:700;line-height:1;color:#000;text-shadow:0 1px 0 #fff;filter:alpha(opacity=20);opacity:.2}.close:hover,.close:focus{color:#000;text-decoration:none;cursor:pointer;filter:alpha(opacity=50);opacity:.5}
+    </style>
+    <script src='@routes.Assets.at("js/bootstrap-table.js")'></script>
+    <script src='@routes.Assets.at("js/qt21/resultTable.js")'></script>
+
+    <div class="row">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                General Modification
+            </div>
+            <div class="panel-body">
+
+                <div class="row col-lg-12">
+
+                    Please go to <a href="http://lnv-3233.sb.dfki.de/phpmyadmin" target="_blank">http://lnv-3233.sb.dfki.de/phpmyadmin</a> to modify details of the database.
+
+                    <button onClick ="recheck()" class="btn btn-success btn-sm pull-right" id="btnSkipToken" style="padding-bottom:6px;"><i class="glyphicon glyphicon-ok"></i>&nbsp; Re-check all Sentences in Reports</button>
+                </div>
+                <div class="row col-lg-12" style="top: 10px;">
+                    <div class="alert alert-info" id="alert">
+                        Remember to recheck sentences in all reports after modification.
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                Complex Queries
+            </div>
+            <div class="panel-body">
+                The following query will be sent directly to the database, make sure you know the table schema before querying. (write 1 if all sentences should be shown, but it might take time.)<br><br>
+
+                <div class="row col-lg-12" style="color:darkred">
+                    select reports.client,reports.type,reports.direction,time,rules.source,translation,category,barrier,pass from reports,sentences,rules where reports.id=sentences.reportid and sentenceid=rules.ID and rules.direction=reports.direction and
+                </div>
+
+                <div>
+                    <textarea class="form-control col-lg-11" style="margin-bottom: 10px;" id="where"></textarea>
+                    <button type="button" class="btn btn-warning col-lg-1" onclick="runQuery()">Run</button>
+                </div>
+
+                    <div style="height:80%;display: none" id="loaderContainer">
+                        <div id="loader"></div>
+                    </div>
+
+                    <div class="row col-lg-12" id="tableContent" style="margin-top:10px;">
+
+
+                        <table data-toggle="table" id="result-table"
+                        data-height="620"
+                        data-filter-control="true"
+                        data-sort-name="id" data-sort-order="asc"
+                        class="table-striped"
+                        data-row-style="rowStyle">
+                            <thead>
+                                <tr>
+                                    <th id="passColumn" data-field="pass" data-halign="center" ><i id="toggleWarning" class="glyphicon glyphicon-info-sign" style="color:black;top:-3px;"></i></th>
+                                    <th data-field="source" data-halign="center" data-sortable="true" >Source</th>
+                                    <th data-field="translation" data-halign="center" data-sortable="true" >Translation</th>
+                                    <th data-field="category" data-halign="center" data-sortable="true" >Category</th>
+                                    <th data-field="barrier" data-halign="center" data-sortable="true" >Phenomenon</th>
+                                    <th data-field="client" data-halign="center" data-sortable="true" >Engine</th>
+                                    <th data-field="type"  data-halign="center" >Type</th>
+                                    <th data-field="lang"  data-halign="center" >Direction</th>
+                                    <th data-field="time"  data-halign="center" >Time</th>
+                                </tr>
+                            </thead>
+                        </table>
+                    </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+
+        var resultData;
+
+        function runQuery(){
+            var where = $('#where').val();
+            if(where.length===0) where="1";
+            $.ajax({
+                type: 'POST',
+                url: '/queryCount',
+                data: JSON.stringify({'where':where}),
+                beforeSend: function(data) {
+                    document.getElementById("loaderContainer").style.display="block";
+                    document.getElementById("tableContent").style.display="none";
+                },
+                success: function(data) {
+
+                    document.getElementById("loaderContainer").style.display="none";
+                    if(data.message.length===0){
+                        document.getElementById("tableContent").style.display="block";
+                        $('#result-table').bootstrapTable('load',data.result);
+                    } else {
+                        $.simplyToast(data.message,'danger');
+                    }
+
+                },
+                contentType: 'application/json',
+                dataType: 'json'
+            });
+        }
+
+        function recheck(){
+
+            $.ajax({
+                type: 'POST',
+                url: '/recheck',
+                data: JSON.stringify({'ok':'ok'}),
+                beforeSend: function(data) {
+                    $('#alert').html("Checking...");
+                },
+                success: function(data) {
+                    //console.log(data)
+                    $('#alert').html("Checking complete! Updated " + data.affected + " sentences in different reports.");
+                },
+                contentType: 'application/json',
+                dataType: 'json'
+            });
+        }
+
+        (function(){$.simplyToast=function(e,t,n){function u(){$.simplyToast.remove(o)}n=$.extend(true,{},$.simplyToast.defaultOptions,n);var r='<div class="simply-toast alert alert-'+(t?t:n.type)+" "+(n.customClass?n.customClass:"")+'">';if(n.allowDismiss)r+='<span class="close" data-dismiss="alert">&times;</span>';r+=e;r+="</div>";var i=n.offset.amount;$(".simply-toast").each(function(){return i=Math.max(i,parseInt($(this).css(n.offset.from))+this.offsetHeight+n.spacing)});var s={position:n.appendTo==="body"?"fixed":"absolute",margin:0,"z-index":"9999",display:"none","min-width":n.minWidth,"max-width":n.maxWidth};s[n.offset.from]=i+"px";var o=$(r).css(s).appendTo(n.appendTo);switch(n.align){case"center":o.css({left:"50%","margin-left":"-"+o.outerWidth()/2+"px"});break;case"left":o.css("left","20px");break;default:o.css("right","20px")}if(o.fadeIn)o.fadeIn();else o.css({display:"block",opacity:1});if(n.delay>0){setTimeout(u,n.delay)}o.find('[data-dismiss="alert"]').removeAttr("data-dismiss").click(u);return o};$.simplyToast.remove=function(e){if(e.fadeOut){return e.fadeOut(function(){return e.remove()})}else{return e.remove()}};$.simplyToast.defaultOptions={appendTo:"body",customClass:false,type:"info",offset:{from:"top",amount:20},align:"right",minWidth:250,maxWidth:450,delay:4e3,allowDismiss:true,spacing:10}})()
+
+
+    </script>
+
+}

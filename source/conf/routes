@@ -1,0 +1,45 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+
+
+GET     /                               controllers.Application.report()
+
+GET     /report                         controllers.Application.report()
+GET     /rules                          controllers.Application.rules()
+GET     /regex                          controllers.Application.regex()
+GET     /dataPreparation                controllers.Application.dataPreparation()
+GET     /loadData                       controllers.Application.loadData()
+GET     /compare                        controllers.Application.compare()
+GET     /dbmanagement                   controllers.Application.dbmanagement
+GET     /newsentence                    controllers.Application.newSentence
+
+# Map static resources from the /public folder to the /assets URL path
+GET     /assets/*file                   controllers.Assets.at(path="/public", file)
+GET     /webjars/*file                  controllers.WebJarAssets.at(file)
+
+# ajax calls
+POST     /getSentenceFromCategoryWithNum     controllers.Application.getSentenceFromCategoryWithNum
+POST     /getSentenceFromSubPerCategory controllers.Application.getSentenceFromSubPerCategory
+POST     /getSentenceFromSubWithNum     controllers.Application.getSentenceFromSubWithNum
+POST    /getSentenceLastReportEngine    controllers.Application.getSentenceFromLastReportOfEngine
+POST    /getSentenceFailed              controllers.Application.getFailedSentences
+
+POST    /updatePass                     controllers.Application.updatePass
+POST    /updateSentenceComment          controllers.Application.updateSentenceComment
+GET     /detail                         controllers.Application.getDetail(source:String,translation:String,pr:String,nr:String,pt:String,nt:String,sentenceid:String)
+POST    /updateRules                    controllers.Application.updateRules
+POST    /scrambleList                   controllers.Application.scrambleList
+POST    /getComparisonData              controllers.Application.getComparisonData
+
+POST    /upload                         controllers.Application.upload()
+
+POST    /getReport                      controllers.Application.getReportResult
+POST    /deleteReport                   controllers.Application.deleteReport
+POST    /updateTokens                   controllers.Application.updateTokens
+POST    /updateReportComment            controllers.Application.updateReportComment
+
+GET     /getSampleSentences             controllers.Application.getSampleSentences()
+POST    /insertRule                     controllers.Application.insertRule
+POST    /recheck                        controllers.Application.recheck
+POST    /queryCount                     controllers.Application.queryCount

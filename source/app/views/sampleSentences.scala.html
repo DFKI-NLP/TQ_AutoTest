@@ -1,0 +1,34 @@
+
+<div class="row col-md-12" style="background-color: #f7f7f7;padding-top:20px;padding-bottom: 20px;margin-left: 20px;margin-right:20px;border-radius: 8px;">
+
+    <table data-toggle="table" id="sample-table"
+    data-height="420"
+    data-filter-control="true"
+    data-sort-name="id" data-sort-order="asc"
+    class="table-striped"
+    data-row-style="rowStyle">
+        <thead>
+            <tr>
+                <th id="passColumn" data-field="pass" data-halign="center" ><i id="toggleWarning" class="glyphicon glyphicon-info-sign" style="color:black;top:-3px;"></i></th>
+                <th data-field="id" data-halign="center" >ID data point</th>
+                <th data-field="source" data-halign="center"  >Source</th>
+                <th data-field="category" data-halign="center" >Category</th>
+                <th data-field="barrier" data-halign="center" >Phenomenon</th>
+                <th data-field="translation" data-halign="center" >Translation</th>
+                <th data-field="comment" data-halign="center" >Comment</th>
+            </tr>
+        </thead>
+    </table>
+
+    <hr sytle="height:500px"></hr>
+
+</div>
+
+
+<script>
+
+    $(function () {
+        $('#sample-table').bootstrapTable({data:samples});
+    });
+
+</script>

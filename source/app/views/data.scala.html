@@ -1,0 +1,160 @@
+@main(1)  {
+
+<script src='@routes.Assets.at("js/bootstrap-table.js")'></script>
+<script src='@routes.Assets.at("js/bootstrap-table-export.js")'></script>
+<!--<script src="//rawgit.com/hhurz/tableExport.jquery.plugin/master/tableExport.js"></script>-->
+
+<div class="row">
+    <div class="col-lg-12">
+        <div class="panel panel-default">
+            <div class="panel-body">
+
+                <div class="form-inline row">
+
+                    <div class="col-lg-12 col-md-12 form-inline">
+
+                        <div>
+                            Upload result of engine
+                            <div class="input-group col-lg-2">
+                                <input type="text" class="form-control" id="btnEngine" onchange="$('#browse').removeClass('disabled');$('#file').prop('disabled', false);">
+                                <div class="input-group-btn">
+                                    <button type="button" class="btn btn-default dropdown-toggle"
+                                            data-toggle="dropdown">Engine <span class="caret"></span>
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                        @Engine.getEngines.map{e =>
+                                        <li><a href="#" onclick="$('#btnEngine').val($(this).text());$('#browse').removeClass('disabled');$('#file').prop('disabled', false);">@e</a></li>
+                                        }
+                                    </ul>
+                                </div>
+                            </div>
+                            for
+                            <select class="selectpicker" data-width="fit" id="selectDirection">
+                                @LangDirection.getLangDirections.map{e =>
+                                <option>@e</option>
+                                }
+                            </select>
+                            from file:
+
+                            <div class="form-group" style="margin-top:13px">
+                                <form enctype="multipart/form-data">
+                                <div class="input-group">
+                                    <span class="input-group-btn">
+                                        <label class="btn btn-default btn-warning disabled" type="button" id="browse">
+                                            Browse <input type="file" id="file" name="report" style="display: none;" disabled="true"/>
+                                        </label>
+                                    </span>
+                                    <input type="text" id="filename" class="form-control" placeholder="set engine and languages first!" disabled="true" style="width:220px">
+                                </div>
+                                </form>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+                </div>
+
+                <div class="row col-lg-12" style="font-size:10px">
+                    Report format: CSV file with 3 columns: ID, source and translation, e.g. <a href='@routes.Assets.at("data/sample_report.csv")'>this.</a>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="panel panel-default col-lg-12" style="display:none; margin-bottom:0px;" id="result-panel">
+        <div class="panel-body">
+
+
+            <div style="height:80%" id="loaderContainer">
+                <div id="loader"></div>
+            </div>
+
+            <div id="tableContent">
+                <div class="row">
+                    <div id="toolbar" class="btn-group" role="group">
+                        <button type="button" class="btn btn-default" id="warningButton"></button>
+                        <button type="button" class="btn btn-default" id="ruleButton"><i class='glyphicon glyphicon-list notShowing' style='color:black;top:-1px;'></i></button>
+                    </div>
+
+                    <table data-toggle="table" id="result-table"
+                           data-show-columns="true"
+                           data-show-export="true"
+                           data-height="550"
+                           data-toolbar="#toolbar"
+                           data-filter-control="true"
+                           data-sort-name="category" data-sort-order="asc"
+                           class="table-striped"
+                           data-row-style="rowStyle">
+                        <thead>
+                        <tr>
+                            <th data-field="pass" data-halign="center"></th>
+                            <th data-field="id" data-halign="center">ID data point</th>
+                            <th data-field="source" data-halign="center" data-sortable="true" data-filter-control="input">Source</th>
+                            <th data-field="category" data-halign="center" data-sortable="true">Category</th>
+                            <th data-field="barrier" data-halign="center" data-sortable="true">Barrier</th>
+                            <th data-field="translation" data-halign="center" data-sortable="true" data-filter-control="input">Translation</th>
+                            <th data-field="positiveTokens" data-visible="false" data-halign="center" >PositiveTokens</th>
+                            <th data-field="positiveRegex" data-visible="false" data-halign="center" >PositiveRegex</th>
+                            <th data-field="negativeTokens" data-visible="false" data-halign="center" >NegativeTokens</th>
+                            <th data-field="negativeRegex" data-visible="false" data-halign="center" >NegativeRegex</th>
+                        </tr>
+                        </thead>
+                    </table>
+                </div>
+                <div class="row" style="height:30px"></div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+
+<script>
+var reportid=@Report.getLastReportID;
+
+$('#file').change(function (event) {
+   event.preventDefault();
+
+   $('#filename').val($(this).val().replace('C:\\fakepath\\', ''));
+
+   var file = $('#file').get(0).files[0];
+   var formData = new FormData();
+   formData.append('report', file);
+   formData.append('engine', $('#btnEngine').val());
+   formData.append('direction', $('#selectDirection').selectpicker('val'));
+   $.ajax({
+       url: '/upload',
+       data: formData,
+       type: 'POST',
+       contentType: false,
+       processData: false,
+       beforeSend: function (data) {
+         $('#result-panel').css("display", "block");
+         document.getElementById("loaderContainer").style.display="block";
+         document.getElementById("tableContent").style.display="none";
+       },
+       success: function (data) {
+         refreshTable(data);
+         reportid+=1;
+         document.getElementById("loaderContainer").style.display="none";
+         document.getElementById("tableContent").style.display="block";
+       },
+       error: function (jqXHR, textStatus, errorThrown) {
+         alert(textStatus + ': ' + errorThrown);
+       }
+    });
+    return false;
+});
+
+
+</script>
+<script src='@routes.Assets.at("js/qt21/resultTable.js")'></script>
+
+
+}

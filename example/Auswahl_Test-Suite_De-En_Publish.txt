@@ -1,0 +1,238 @@
+Direction	Category	Phenomenon	Source	Correct Translation	Correct Translation	Incorrect Translation	Incorrect Translation
+deen	Ambiguity	Lexical ambiguity	Das Gericht gestern Abend war lecker.	The dish last night was delicious.	The meal last night was delicious.	The court last night was delicious.	The court yesterday night was delicious.
+deen	Ambiguity	Lexical ambiguity	Die Tür hing schief in den Angeln.	The door hung crooked in its hinges.	The door hung awkwardly in the hinges.	The door hung inclined in the fishing rods.	The door hung awry in the angling.
+deen	Ambiguity	Lexical ambiguity	Er hat einen Kater, weil er sehr tierlieb ist.	He has a cat because he's very veterinary.	It has a tomcat, because he very much animal dear is.	He has a hangover because he is very animal-loving.	He has a hangover, because he is very fond of animals.
+deen	Ambiguity	Structural ambiguity	Der Kühlschrank riecht schlecht.	The fridge smells bad.	The refrigerator smells bad.	The fridge smells badly.	The fridge smells poorly.
+deen	Ambiguity	Structural ambiguity	Die Milch trinkt die Katze.	The cat drinks the milk.	The cat is drinking the milk.	The milk drinks the cat.	The milk is drinking the cat.
+deen	Ambiguity	Structural ambiguity	In Berlin spielt das Ensemble del Arte.	In Berlin, the Ensemble del Arte plays.	The Ensemble del Arte is playing in Berlin.	In Berlin, the ensemble plays del IFC.	In Washington, the Ensemble del documentaries.
+deen	Composition	Compound	Im Restaurant bestellte sie ein Fischgericht.	She ordered a fish dish at the restaurant.	In the restaurant she ordered a fish dish.		
+deen	Composition	Compound	Sie öffnete den Wohnzimmerschrank.	She opened the living room cupboard.	She opened the living room cabinet.	She opened the Wohnzimmerschrank.	She opened the living room.
+deen	Composition	Compound	Michael suchte wieder das Brotmesser.	Michael was again looking for the bread knife.	Michael was looking for the bread knife again.	Michael looked for again the bread measurers.	Michael again sought the Brotmesser.
+deen	Composition	Phrasal verb	Wie sah das Baby aus?	What did the baby look like?	How did the baby look?	How was the Baby?	How did the baby come from?
+deen	Composition	Phrasal verb	Ich sehe ein Video an.	I watch a video.	I'm watching a video.	I see a Video.	I view a video.
+deen	Composition	Phrasal verb	Warum starben die Dinosaurier aus?	Why did the dinosaurs die out?	Why did the dinosaurs become extinct?	Why did the dinosaurs die?	Why the dinosaurs died?
+deen	Coordination & ellipsis	Gapping	Tom trinkt Kaffee und Mia Tee.	Tom drinks coffee and Mia tea.	Tom is drinking coffee and Mia tea.	Tom is drinking coffee and tea Mia.	
+deen	Coordination & ellipsis	Gapping	Ich hasse Oliven und Lisa Käse.	I hate olives and Lisa cheese.	I hate olives and lisa cheese.	I hate olives and Lisa Käse.	
+deen	Coordination & ellipsis	Gapping	Peter kann singen und Mary tanzen.	Peter can sing and Mary dance.	Peter can sing and Mary can dance.	Peter can sing and dance Mary.	Peter can sing and dancing Mary.
+deen	Coordination & ellipsis	Right node raising	Larry liebt und Tim hasst Oliven.	Larry loves and Tim hates olives.		Larry loves, and Tim hates olives.	Larry loves and hates Tim olives.
+deen	Coordination & ellipsis	Right node raising	Lena backt und Tim isst einen Kuchen.	Lena bakes and Tim eats a cake.	Lena is baking and Tim is eating a cake.	Lena bakes and Tim is eating a cake.	Lena bake and Tim eat a cake.
+deen	Coordination & ellipsis	Right node raising	Alex las und Lea schrieb ein Buch.	Alex read and Lea wrote a book.		Alex read, and Lea wrote a book.	Alex read and wrote a book to Lea.
+deen	Coordination & ellipsis	Sluicing	Phoebe aß etwas, aber sie weiß nicht, was.	Phoebe ate something, but she doesn't know what.	Phoebe ate something, but she does not know what.	Phoebe ate something, but she does not know, what.	Phoebe ate something, but you don't know what.
+deen	Coordination & ellipsis	Sluicing	John mag die Nudeln nicht, aber er weiß nicht, warum.	John doesn't like the noodles, but he doesn't know why.	John does not like the noodles, but he does not know why.	John does not like the noodles but he does not know why.	John does not like the noodles, but he does not know, why.
+deen	Coordination & ellipsis	Sluicing	Sie schrieb einen Brief, doch sie wusste nicht, wem.	She wrote a letter, but she did not know who.	She wrote a letter, but she didn't know whom.	She wrote a letter, however, she did not know, who.	It wrote a letter, but she did not know, whom.
+deen	Coordination & ellipsis	Stripping	Lena hat das Buch geschrieben, nicht Lisa.	Lena wrote the book, not Lisa.	Lena has written the book, not Lisa.	Lena wrote, not the book to Lisa.	
+deen	Coordination & ellipsis	Stripping	Lisa ist hungrig und Tim auch.	Lisa is hungry and Tim is too.	Lisa is hungry and Tim too.	Lisa is hungry and Tim is also.	
+deen	Coordination & ellipsis	Stripping	Alice mag Äpfel und Sarah auch.	Alice likes apples and Sarah, too.	Alice likes apples and Sarah too.	Alice likes Apples, and Sarah.	Alice also likes apples and Sarah.
+deen	False friends	False friends	Das hier ist der aktuelle Bericht.	This is the current report.	Here is the latest report.		
+deen	False friends	False friends	Er las gerne Novellen.	He liked to read novella.	He likes to read novellas.	He liked to read novels.	He likes to read Novellen.
+deen	False friends	False friends	Lena hat eine schlechte Note in Latein.	Lena has a bad grade in Latin.	Lena has a poor grade in Latin.	Lena has a bad note in Latin.	Lena has a bad touch in Latin.
+deen	Function word	Focus particle	Sie ist auch hier. 	She's here, too.	She is also here.		
+deen	Function word	Focus particle	Nur Lena konnte nicht kommen.	Only Lena couldn't come.	Only Lena could not come.		
+deen	Function word	Focus particle	Tim hat nur eine Tochter.	Tim has only one daughter.	Tim only has one daughter.	Tim has a daughter.	
+deen	Function word	Modal particle	Dann musst du eben morgen wiederkommen.	Then you just have to come back tomorrow.	Then you'll have to come back tomorrow.	Then you must return now tomorrow.	Then you have to come back just tomorrow.
+deen	Function word	Modal particle	Wie heißt eigentlich dein Hund?	What is your dog called?	What's your dog's name?	How is your dog actually called?	What does your dog actually mean?
+deen	Function word	Modal particle	Bist du etwa verheiratet? 	Are you married?	Are you married or what?	Are you married, for example?	Are you about to get married?
+deen	Function word	Question tag	Du bist verrückt, oder?	You're crazy, aren't you?	You're crazy, right?	You're crazy, or?	You're crazy, are not you?
+deen	Function word	Question tag	Du hast die Katzen gefüttert, nicht wahr?	You fed the cats, didn't you?	You fed the cats, right?	You're going to feed the cats, not true?	You've fed the cats, isn't it?
+deen	Function word	Question tag	Der Zug fährt um 7:20 Uhr, nicht?	The train leaves at 7: 20 a.m., doesn't it?	The train leaves at 7:20, right?	The train leaves at 7: 20, not?	The train leaves at 7:20, does not it?
+deen	LDD & interrogatives	Extended adjective construction	Sie trug einen mit Wein und Brot gefüllten Korb.	She was carrying a basket filled with wine and bread.	She wore a basket full of wine and bread.	She wore a wine-and bread-filled basket.	She wore a wine with bread and packed basket.
+deen	LDD & interrogatives	Extended adjective construction	Sie trug einen im Feuer geschmiedeten Ring. 	She was wearing a ring forged in the fire.	She wore a ring forged in the fire.	She wore a forged in the fire ring.	
+deen	LDD & interrogatives	Extended adjective construction	In Urlaub traf ich meinen vor vielen Jahren nach Thailand ausgewanderten Lehrer.	On vacation, I met the teachers who emigrated to Thailand many years ago.	On vacation I met my teachers who had emigrated to Thailand many years ago.	In the holidays I met my many years ago to Thailand expatriate teachers.	On vacation I met my teacher emigrated to Thailand many years ago.
+deen	LDD & interrogatives	Extraposition	Jemand hat eine Nachricht hinterlassen, den wir nicht kennen.	Somebody who we do not know left behind an information.		Someone has left a message we don't know.	Someone left a message we do not know.
+deen	LDD & interrogatives	Extraposition	Das Haus wurde blau gestrichen, das am Ende der Straße steht.	The house which stands at the end of the street was deleted blue.	The house was painted blue, which stands at the end of the street.	The house was blue painted, which stands in the end the road.	
+deen	LDD & interrogatives	Extraposition	Der Regenschirm liegt zu Hause, den ich jetzt bräuchte.	The umbrella is at home that I need now.	The umbrella which I would need now lies at home.	The umbrella is at home, I would need now.	
+deen	LDD & interrogatives	Multiple connectors	Wir wollen entweder nach Ibiza fliegen oder nach Mallorca.	We want to fly either to Ibiza or to Mallorca.	We either want to fly to Ibiza or to Mallorca.	We want to either fly or to Mallorca to Ibiza.	
+deen	LDD & interrogatives	Multiple connectors	Ich hätte gerne entweder ein rotes oder ein grünes Shirt.	I would like to have either a red or a green shirt.	I'd like either a red or a green shirt.		
+deen	LDD & interrogatives	Multiple connectors	Ich mag sowohl rote als auch blaue Bonbons.	I like both red and blue candies.	I like red as well as blue candies.	I thinks both red as also blue Bonbons.	
+deen	LDD & interrogatives	Pied-piping	Der Mann, von dem Maria geküsst wird, liebt sie.	The man who kisses Mary loves her.		The man who is kissed by Maria loves her.	The man Maria is kissing, loves you.
+deen	LDD & interrogatives	Pied-piping	Wie schnell gefahren ist er?	How fast did he drive?	How fast did he go?	As driven as fast as he is?	As quickly it went?
+deen	LDD & interrogatives	Pied-piping	Yvonne hatte erfolglos den Knopf zu drücken versucht.	Yvonne had unsuccessfully tried to press the button.	Yvonne had tried unsuccessfully to press the button.	Yvonne had tried the button to press unsuccessfully.	
+deen	LDD & interrogatives	Polar question	Hast du das Buch schon gelesen?	Have you already read the book?	Did you already read the book?	You've already read the book?	
+deen	LDD & interrogatives	Polar question	Hat er das Fenster geöffnet?	Did he open the window?	Has he opened the window?	He opened the window?	Has he open the window?
+deen	LDD & interrogatives	Polar question	Ging er gestern in den Unterricht?	Did he go to classes yesterday?	Did he go to class yesterday?	He went yesterday in the class?	Went he yesterday in the classroom?
+deen	LDD & interrogatives	Scrambling	Sie hat die Bücher meinem Bruder geschenkt.	She gave the books to my brother.	She has given the books to my brother.	She gave my brother's books.	
+deen	LDD & interrogatives	Scrambling	Sie warf den Ball ihrer Mitspielerin zu.	She threw the ball at her fellow player.	She threw the ball to her teammate.	She threw the ball of her fellow player.	
+deen	LDD & interrogatives	Scrambling	Den Tierpfleger hat der Löwe gebissen.	The animal keeper was bitten by the lion.	The lion has bitten the animal keeper.	The zookeeper has bitten the lion.	The zookeeper and the lion has bitten.
+deen	LDD & interrogatives	Wh-movement	Wann schläft der Manager?	When does the manager sleep?	When is the manager sleeping?	When the manager is sleeping?	
+deen	LDD & interrogatives	Wh-movement	Was wird heute in Berlin vorgestellt?	What is being presented today in Berlin?	What will be presented today in Berlin?		
+deen	LDD & interrogatives	Wh-movement	Woran denkt der Manager?	What is the manager thinking of?	What's the manager thinking about?	What does the manager think?	What is the manager thinking?
+deen	MWE	Collocation	Simon trinkt am liebsten lieblichen Wein.	Simon prefers to drink sweet wine.	Simon loves to drink sweet wine.	Simon drinks preferably lovely wine.	Simon prefers to drink adorable wine.
+deen	MWE	Collocation	Vor dem Essen decken wir den Tisch.	Before the meal we set the table.	Before dinner we set the table.	Before eating, we cover the table.	Before dinner, we cover the table.
+deen	MWE	Collocation	Lisa bat Tim, ein Foto von ihr zu machen.	Lisa asked Tim to take a photo of her.	Lisa asked Tim to take a picture of her.	Lisa asked Tim to make a photo of her.	Lisa asked Tim to make a photo from it to.
+deen	MWE	Idiom	Tim hat seinen Freund grün und blau geschlagen. 			Tim has beaten his friend green and blue.	Tim beat his friend green and blue.
+deen	MWE	Idiom	Du bist auf dem Holzweg.	You're on the wrong track.	You are on the wrong track.	You're on the wood track.	You're on the wooden path.
+deen	MWE	Idiom	Lisa machte sich früh vom Acker.			Lisa was out of the field early.	Lisa got off the field early.
+deen	MWE	Prepositional MWE	Ich gehe immer zu Fuß zur Arbeit.	I always walk to work.	I always go on foot to work.	I always go to foot to the work.	
+deen	MWE	Prepositional MWE	Aus Gewohnheit schloss Tim die Wohnungstür von innen ab.	Out of habit, Tim closed the apartment door from the inside.	Out of habit, Tim locked the door from the inside.	From habit, Tim closed the apartment door from the inside.	From Custom, Tim closed the door from the inside.
+deen	MWE	Prepositional MWE	Die Kosten gehen zu Lasten des Angeklagten.	The costs will be borne by the defendant.	The costs come at the expense of the defendant.	The costs go debited to the accused.	The cost go to the burdens of the defendant.
+deen	MWE	Verbal MWE	Mein Nachbar gibt heute eine Party. 	My neighbor is having a party tonight.	My neighbour is having a party today.	My neighbour gives a party today.	My neighbour is giving a party today.
+deen	MWE	Verbal MWE	Nach der Arbeit nahm Tim als erstes ein heißes Bad.	After work, Tim first took a hot bath.	After work, Tim was the first to take a hot bath.		
+deen	MWE	Verbal MWE	Lena suchte das Geschenk für Tim aus.	Lena selected the gift for Tim.	Lena picked the gift for Tim.	Lena was looking for the gift for Tim.	Lena sought the gift for Tim.
+deen	Named entitiy & terminology	Date	Mein Geburtstag ist der 27.06.1988.	My birthday is 27th June 1988.	My birthday is June 27, 1988.	My birthday is the 27.Dec 1988.	My birthday is the 27,06 th.
+deen	Named entitiy & terminology	Date	Marilyn Monroe wurde am 1.6.26 in Los Angeles geboren.			Marilyn Monroe was born on June 1, 2006 in Los Angeles.	Marilyn Monroe was born on April 1,6, 26 in Los An...
+deen	Named entitiy & terminology	Date	Michael Jackson starb am 25. Juni 2009.	Michael Jackson died on June 25, 2009.	Michael Jackson died on 25 June 2009.	Michael Jackson died on June 25,2009.	Michael Jackson died on June 24, 2009.
+deen	Named entitiy & terminology	Location	Wir fahren jedes Jahr nach Sachsen in den Urlaub.	We go on holiday to Saxony every year.	Every year we go to Saxony on holiday.	We drive every year to Yorkshire in the holiday.	
+deen	Named entitiy & terminology	Location	Sarah fliegt jedes Jahr in die Karibik.	Sarah flies to the Caribbean every year.	Sarah flies each year to the Caribbean.		
+deen	Named entitiy & terminology	Location	Ich habe Verwandte in Moskau.	I have relatives in Moscow.			
+deen	Named entitiy & terminology	Measuring unit	Das neue Modell fährt bis zu 250 km/h schnell.	The new model runs up to 250 km/h fast.	The new model travels up to 250 km / h fast.		
+deen	Named entitiy & terminology	Measuring unit	Das Auto hat 150 PS.	The car has 150 hp.	The car has 150 horsepower.		
+deen	Named entitiy & terminology	Measuring unit	Deine Reifen brauchen einen Druck von rund zwei bar.	Your tires need a pressure of around two bar.	Your tires need a pressure of around 2 bar.	Your tires need a pressure of about two cash.	
+deen	Named entitiy & terminology	Proper name	Der deutsche Kanzler in den letzten Jahren des kalten Krieges war Kohl.	The German chancellor in the last few years of the cold war was Kohl.	The German chancellor in the final years of the cold war was Kohl.	The German Chancellor in the last years of the cold war was cabbage.	The German chancellor in the last years of the Cold War was kohl.
+deen	Named entitiy & terminology	Proper name	Jedes Jahr im September beginnt das Oktoberfest. 	The Oktoberfest starts every year in September.	Every year in September the Oktoberfest begins.	Each year in September begins the Octoberfest.	
+deen	Named entitiy & terminology	Proper name	Seit Oktober studiert Tim an der Freien Universität Berlin.	Tim has been studying at the Freie Universität Berlin since October.	Tim has been studying at the Free University of Berlin since October.	Since October, Tim studied to the closest University of Washington.	
+deen	Negation	Negation	Tim konnte seine Brille nirgendwo finden.	Tim couldn't find his glasses anywhere.	Tim could not find its glasses anywhere.		
+deen	Negation	Negation	Das hat mir keiner gesagt.	No one told me that.	Nobody told me that.	That told me none.	It has one nobody said.
+deen	Negation	Negation	Ich möchte diesen Teppich nicht kaufen.	I don't want to buy that carpet.	I do not want to buy this carpet.	I don't buy those carpet.	I'm not buying this carpet.
+deen	Non-verbal agreement	Coreference	Die Lampe ist kaputt, sie geht nicht mehr an.	The lamp is broken, it doesn't work anymore.	The lamp is broken, it no longer goes on.	The lamp is broken.	The lamp is screwed, she goes on.
+deen	Non-verbal agreement	Coreference	Lisa hat Lasagne gemacht, sie ist schon im Backofen.	Lisa made lasagne, it already is in the baking-oven.		Lisa has made lasagna, she is already in the oven.	Lisa made lasagne, she is already in the oven.
+deen	Non-verbal agreement	Coreference	Ich kann den Stift nicht finden, vermutlich habe ich ihn verloren.	I can't find the pen, presumably I lost it.	I can't find the pen, I guess I lost it.	I can't find the pen, I guess I've lost him.	I can't find the pencil, I believed I lost him.
+deen	Non-verbal agreement	External possessor	Karin kämmte ihrem Kind die Haare.	Karin combed her child's hair.	Karin was combing her child's hair.	Karin combed your child's hair.	Karin combed to their child the hair.
+deen	Non-verbal agreement	External possessor	Ihm fiel ein Apfel auf den Kopf.	An apple fell on his head.	An Apple fell on his head.	Him fell a apple on the head.	He fell an apple on his head.
+deen	Non-verbal agreement	External possessor	Mir kommt eine Idee.	I have an idea.	I've got an idea.	Me an idea comes.	To me an idea.
+deen	Non-verbal agreement	Internal possessor	Er hat meine Brille zerbrochen.	He broke my glasses.	He shattered my glasses.		
+deen	Non-verbal agreement	Internal possessor	Er ist auf meinen Mantel getreten.	He stepped on my coat.	He's stepped on my coat.		
+deen	Non-verbal agreement	Internal possessor	Er schnitt ihr Haar.	He cut her hair.		It cut their hair.	
+deen	Punctuation	Comma	Gestern waren Lisa, meine Schwester, und ich im Kino.	Yesterday Lisa, my sister, and I were in the cinema.	Yesterday, Lisa, my sister, and I were in the movi...	Yesterday, Lisa, my sister and I were in the cinema.	Yesterday, Lisa, my sister and I in the movies.
+deen	Punctuation	Comma	Isabel wusste, sie würde entlassen werden.	Isabel knew she would be fired.	Isabel knew she would be sacked.		
+deen	Punctuation	Comma	Der Mantel, den Dan gestern trug, war neu.	The coat that Dan wore yesterday was new.	The coat Dan wore yesterday was new.	The coat, which Dan carried yesterday, was new.	
+deen	Punctuation	Quotation marks	"Wir meinten: ""Wir fliegen nach Mallorca."""	"We said, ""We're flying to Mallorca."""	"We said, ""We're flying to Mallorca."""	"We said: ""We're flying to Mallorca."""	"We said: ""we are flying to Mallorca."""
+deen	Punctuation	Quotation marks	"""Kann ich reinkommen?"", fragte er."	"""Can I come in?"" he asked."	"""Can I get in?"" he asked."	"""Can I come in?"" He asked."	"""Can I get in?,"" he asked."
+deen	Punctuation	Quotation marks	"""Ich glaube"", sagte Lena, ""ich kann nicht mehr gewinnen."""	"""I think,"" Lena said, ""I can't win anymore."""	"""I believe,"" said Lena, ""I can't win."""	"""I believe,"" Lena said,""I can't win anymore."""	“I believe”, said Lena, “I can no more win.”
+deen	Subordination	Adverbial clause	Lisa ging joggen, obwohl es regnete.	Lisa went jogging even though it was raining.		Lisa went jogging, even though it was raining.	Lisa went jogging, although it rained.
+deen	Subordination	Adverbial clause	Ich schreibe alles auf, damit ich es nicht vergesse.	I write everything down so I will not forget it.	I write down everything so that I don't forget it.	I note everything, so that I do not forget it.	I don't write everything down, so I don't forget i...
+deen	Subordination	Adverbial clause	Nachdem sie ihre Tasche verloren hatte, ging sie nach Hause. 	After she had lost her bag, she went home.	After she lost her bag, she went home.		
+deen	Subordination	Cleft sentence	Es ist Lisa, die die Rede hält.	It's Lisa who is giving the speech.	It's Lisa who gives the speech.	It is Lisa, which gives the speech.	It is Lisa, who gives the speech.
+deen	Subordination	Cleft sentence	Es war mein Geld, das du ausgegeben hast.	It was my money you spent.	It was my money that you have spent.	It was my money, which you spent.	
+deen	Subordination	Cleft sentence	Sein Buch war es, das mich inspiriert hat.	It was his book that inspired me.	His book was it that inspired me.	His book was it, that inspired me.	
+deen	Subordination	Free relative clause	Was der Chef sagt, ist wahr.	What the boss is saying is true.	What the boss says is true.	Which the boss says, is true.	
+deen	Subordination	Free relative clause	Wer kein Spanisch spricht, darf nicht mitkommen.	If you don't speak Spanish, you can't come.	Those who do not speak Spanish are not allowed to come along.	Who does not speak Spanish, may not come along.	Those who do not speak Spanish, may not come.
+deen	Subordination	Free relative clause	Was du glaubst, ist egal.	What you believe doesn't matter.	What you think doesn't matter.	What do you think, is no matter.	What you're glaubst, whatever.
+deen	Subordination	Indirect speech	Der Schüler meint, er habe den Film gesehen.	The student thinks he has seen the film.		The student thinks he saw the film.	
+deen	Subordination	Indirect speech	Lisa meint, sie wäre mit dem Bus gefahren.	Lisa says she has gone by bus.		Lisa says she drove the bus.	
+deen	Subordination	Indirect speech	Sie sagte, sie habe das Auto gewaschen.	She said she had washed the car.		She said, she had washed the car.	She said she washed the car.
+deen	Subordination	Infinitive clause	Es fängt an zu regnen.	It starts to rain.	It starts raining.		
+deen	Subordination	Infinitive clause	Er beschloss, Jura zu studieren.	He decided to study law.	He decided on studying law.		
+deen	Subordination	Infinitive clause	Es ist wichtig, Fremdsprachen zu lernen.	It is important to learn foreign languages.	It is important to learn languages.		
+deen	Subordination	Object clause	Niemand weiß, wer es Lena verraten hat.	Nobody knows who told Lena.		Nobody knows, who told Lena.	
+deen	Subordination	Object clause	Lena wusste nicht, wer ihre Tasche gestohlen hatte.	Lena did not know who had stolen her bag.	Lena didn't know who had stolen her bag.		
+deen	Subordination	Object clause	Tim hofft, er wird es schaffen.	Tim hopes he will make it.	Tim hopes he will manage.	Tim hopes, it will create.	
+deen	Subordination	Pseudo-cleft sentence	Was auf der Kommode lag, das war ihr Buch.	What was on the dresser that was her book.	What was on the commode was her book.	What was on the dresser, that was her book.	What was on the commode, that was her book.
+deen	Subordination	Pseudo-cleft sentence	Was mich inspiriert hat, das war sein Buch.	What inspired me was his book.		What inspired me, that was his book.	What has inspired me, it was his book.
+deen	Subordination	Pseudo-cleft sentence	Was Lena gerne mag, das ist Pizza.	What Lena likes is pizza.		What Lena likes, that's pizza.	What like Lena love, that is Pizza.
+deen	Subordination	Relative clause	Wer ist der Mann, der dort drüben steht?	Who is the man standing over there?	Who is the man who stands over there?	Who is the man, who stands over there?	
+deen	Subordination	Relative clause	Der Mann, auf welchen du gezeigt hast, ist mein Onkel. 	The man you pointed to is my uncle.	The man at whom you pointed is my uncle.	The man, to whom you pointed, is my uncle.	The man, which of you shown you, is my uncle.
+deen	Subordination	Relative clause	Peter hat einen Freund, der in New York lebt. 	Peter has a friend who lives in New York.		Peter has a friend, who lives in New York.	
+deen	Subordination	Subject clause	Peter zu verzeihen fiel Tim schwer.	Forgiving Peter was difficult for Tim.	Peter had a hard time forgiving Tim.		To forgive Peter, Tim fell hard.
+deen	Subordination	Subject clause	Es ist besser, du kommst später noch einmal zurück.	It's better you come back later.		It is better, you returns later again.	It's better, you'll come back later.
+deen	Subordination	Subject clause	Die Pizza zuzubereiten machte Lisa Spaß.	Lisa had fun preparing the pizza.	Making the pizza was fun for Lisa.		
+deen	Verb tense/aspect/mood	Conditional	Falls dein Zug verspätet ist, werden wir im Restaurant auf dich warten.	If your train is delayed, we will wait for you in the restaurant.	If your train is delayed, we will wait for you in the restaurant.		
+deen	Verb tense/aspect/mood	Conditional	Müsste ich nicht arbeiten, würde ich euch begleiten.	If I didn't have to work, I would accompany you.	If I did not have to work, I would accompany you.	If I would not have to work, I would accompany you.	I didn't have to work, I would accompany you.
+deen	Verb tense/aspect/mood	Conditional	Wenn er sie darum gebeten hätte, wäre sie zu ihm gekommen.	If he had asked her, she would have come to him.	If he had asked her to do so, she would have come to him.	If he had asked her, she would come to him.	If he had asked you, would you come to him.
+deen	Verb tense/aspect/mood	Ditransitive - future I	Ich werde der Frau das Buch geben.	I will give the book to the woman.	I'm going to give the woman the book.	I will give the woman's book.	
+deen	Verb tense/aspect/mood	Ditransitive - future I	Du wirst der Frau das Buch geben.	You're going to give the woman the book.	You will give the woman the book.	You the woman will give the book to.	You'll give the woman's book.
+deen	Verb tense/aspect/mood	Ditransitive - future I	Er wird der Frau das Buch geben.	He's going to give the woman the book.	He will give the book to the woman.	It will give the book to the woman.	He will give the woman's book.
+deen	Verb tense/aspect/mood	Ditransitive - perfect	Wir haben der Frau das Buch gegeben.	We have given the woman the book.	We gave the book to the woman.	We have the woman's book.	We have been the wife of the book.
+deen	Verb tense/aspect/mood	Ditransitive - perfect	Ihr habt der Frau das Buch gegeben.	You've given the woman the book.	You gave the book to the woman.	Her've been the woman's book.	Her husband's wife got the book there.
+deen	Verb tense/aspect/mood	Ditransitive - perfect	Sie haben der Frau das Buch gegeben.	You have given the woman the book.	They gave the book to the woman.	They have the woman's book.	They have been the wife of the book.
+deen	Verb tense/aspect/mood	Ditransitive - pluperfect	Ich hatte der Frau das Buch gegeben.	I had given the woman the book.	I had given the book to the woman.	I gave the book to the woman.	I had the woman's book.
+deen	Verb tense/aspect/mood	Ditransitive - pluperfect	Du hattest der Frau das Buch gegeben.	You had given the woman the book.	You had given the book to the woman.	You gave the book to the woman.	You are the woman were given the book.
+deen	Verb tense/aspect/mood	Ditransitive - pluperfect	Er hatte der Frau das Buch gegeben.	He had given the woman the book.	He had given the book to the woman.	He gave the book to the woman.	It had given the book to the woman.
+deen	Verb tense/aspect/mood	Ditransitive - present	Wir geben der Frau das Buch.	We give the woman the book.	We give the book to the woman.	We'll give the woman the book.	Give the woman the book.
+deen	Verb tense/aspect/mood	Ditransitive - present	Ihr gebt der Frau das Buch.	You give the woman the book.	You give the book to the woman.	You give to the woman the book.	
+deen	Verb tense/aspect/mood	Ditransitive - present	Sie geben der Frau das Buch.	They give the woman the book.	You give the woman the book.	Give the woman the book.	They give the woman's book.
+deen	Verb tense/aspect/mood	Ditransitive - preterite	Ich gab der Frau das Buch.	I gave the book to the woman.	I gave the woman the book.	I gave the woman's book.	
+deen	Verb tense/aspect/mood	Ditransitive - preterite	Du gabst der Frau das Buch.	You gave the woman the book.	You gave the book to the woman.	You give the woman the book.	You gabst the woman's book.
+deen	Verb tense/aspect/mood	Ditransitive - preterite	Er gab der Frau das Buch.	He gave the woman the book.	He gave the book to the woman.	It gave the book to the woman.	He gave the woman's book.
+deen	Verb tense/aspect/mood	Imperative	Schlaf jetzt!	Sleep now!			
+deen	Verb tense/aspect/mood	Imperative	Werde nicht krank.	Don't get sick.	Do not become ill.	I will not be sick.	Will not be sick.
+deen	Verb tense/aspect/mood	Imperative	Sei still!	Be quiet!	Shut up!	Is quiet!	It is silent!
+deen	Verb tense/aspect/mood	Intransitive - future I	Wir werden schlafen.	We will sleep.	We're going to sleep.	We're sleep.	
+deen	Verb tense/aspect/mood	Intransitive - future I	Ihr werdet schlafen.	You will sleep.	You're going to sleep.	Let her sleep.	Her tracked sleep.
+deen	Verb tense/aspect/mood	Intransitive - future I	Sie werden schlafen.	They're going to sleep.	You are going to sleep.	They're sleep.	
+deen	Verb tense/aspect/mood	Intransitive - perfect	Ich habe geschlafen.	I've slept.	I have been sleeping.	I've slept with.	
+deen	Verb tense/aspect/mood	Intransitive - perfect	Du hast geschlafen.	You slept.	You were asleep.	You slept through it.	You're slept.
+deen	Verb tense/aspect/mood	Intransitive - perfect	Er hat geschlafen.	He has slept.	He slept.	It slept.	
+deen	Verb tense/aspect/mood	Intransitive - pluperfect	Wir hatten geschlafen.	We had been sleeping.	We had slept.	We had sleep.	We slept.
+deen	Verb tense/aspect/mood	Intransitive - pluperfect	Ihr hattet geschlafen.	You had slept.		You were sleeping.	You slept.
+deen	Verb tense/aspect/mood	Intransitive - pluperfect	Sie hatten geschlafen.	They had been sleeping.	They had slept.	They had sleep.	You were asleep.
+deen	Verb tense/aspect/mood	Intransitive - present	Ich schlafe.	I am asleep.	I'm sleeping.	I go to sleep.	I sleeping.
+deen	Verb tense/aspect/mood	Intransitive - present	Du schläfst.	You sleep.	You're asleep.	You're sleepwalking.	You're schläfst.
+deen	Verb tense/aspect/mood	Intransitive - present	Er schläft.	He is sleeping.	He's sleeping.	It sleeps.	He was sleeping.
+deen	Verb tense/aspect/mood	Intransitive - preterite	Wir schliefen.	We were sleeping.	We slept.		
+deen	Verb tense/aspect/mood	Intransitive - preterite	Ihr schlieft.	You slept.		Her slept.	You fell asleep.
+deen	Verb tense/aspect/mood	Intransitive - preterite	Sie schliefen.	They slept.	They were sleeping.	You have been asleep.	
+deen	Verb tense/aspect/mood	Modal - future I	Ich werde schlafen sollen.	I will be supposed to sleep.	I'm going to be supposed to sleep.	I'm going to sleep.	I will sleep.
+deen	Verb tense/aspect/mood	Modal - future I	Du wirst schlafen wollen.	You're going to want to sleep.	You will want to sleep.	You'll sleep.	
+deen	Verb tense/aspect/mood	Modal - future I	Sie wird schlafen müssen.	She will have to sleep.	She's going to have to sleep.	You will need to sleep.	It will have to sleep.
+deen	Verb tense/aspect/mood	Modal - perfect	Sie haben schlafen sollen.	They were supposed to sleep.	They were to sleep.	You should have slept.	They should have been allowed to sleep.
+deen	Verb tense/aspect/mood	Modal - perfect	Wir haben schlafen dürfen.	We were allowed to sleep.	We have been allowed to sleep.	We have been able to sleep.	We don't have to sleep.
+deen	Verb tense/aspect/mood	Modal - perfect	Ihr habt schlafen können.	You have been able to sleep.	You were able to sleep.	Her've been sleep.	You've got to sleep.
+deen	Verb tense/aspect/mood	Modal - pluperfect	Ich hatte schlafen wollen.	I had wanted to sleep.		I had to sleep.	I had to sleep.
+deen	Verb tense/aspect/mood	Modal - pluperfect	Du hattest schlafen müssen.	You had had to sleep.		You had to sleep.	You must sleep hattest.
+deen	Verb tense/aspect/mood	Modal - pluperfect	Sie hatte schlafen dürfen.	She had been allowed to sleep.		She was allowed to sleep.	They had been allowed to sleep.
+deen	Verb tense/aspect/mood	Modal - present	Ihr sollt schlafen.	You shall sleep.	You are to sleep.	You should sleep.	I want you to sleep.
+deen	Verb tense/aspect/mood	Modal - present	Sie wollen schlafen.	They want to sleep.	You want to sleep.		
+deen	Verb tense/aspect/mood	Modal - present	Wir können schlafen.	We can sleep.		We can have a sleep.	
+deen	Verb tense/aspect/mood	Modal - preterite	Ich musste schlafen.	I had to sleep.		I was able to sleep.	I was sleeping.
+deen	Verb tense/aspect/mood	Modal - preterite	Du durftest schlafen.	You were allowed to sleep.		You got to sleep.	You're asleep.
+deen	Verb tense/aspect/mood	Modal - preterite	Sie konnte schlafen.	She could sleep.	She was able to sleep.	You could sleep.	She couldn't sleep.
+deen	Verb tense/aspect/mood	Modal negated - future I	Wir werden nicht schlafen sollen.	We will not be supposed to sleep.	We're not going to be supposed to sleep.	We're not supposed to sleep.	We're not going to sleep.
+deen	Verb tense/aspect/mood	Modal negated - future I	Ihr werdet nicht schlafen wollen.	You will not want to sleep.	You're not going to want to sleep.	Her husband will not want to sleep.	Her tracked doesn't sleep.
+deen	Verb tense/aspect/mood	Modal negated - future I	Sie werden nicht schlafen müssen.	They're not going to have to sleep.	They won't have to sleep.	They're not sleep.	They'll not sleep.
+deen	Verb tense/aspect/mood	Modal negated - perfect	Sie hat nicht schlafen sollen.	She wasn't supposed to sleep.	She was not supposed to sleep.	She didn't want to sleep.	She shouldn't have slept.
+deen	Verb tense/aspect/mood	Modal negated - perfect	Ich habe nicht schlafen dürfen.	I have not been allowed to sleep.	I wasn't allowed to sleep.	I hadn't been sleeping.	I did not sleep.
+deen	Verb tense/aspect/mood	Modal negated - perfect	Du hast nicht schlafen können.	You haven't been able to sleep.	You couldn't sleep.	You can't sleep.	You didn't sleep.
+deen	Verb tense/aspect/mood	Modal negated - pluperfect	Wir hatten nicht schlafen wollen.	We had not wanted to sleep.		We did not want to sleep.	We had not to sleep.
+deen	Verb tense/aspect/mood	Modal negated - pluperfect	Ihr hattet nicht schlafen müssen.	You had not had to sleep.		You didn't have to sleep.	You didn't need to sleep.
+deen	Verb tense/aspect/mood	Modal negated - pluperfect	Sie hatten nicht schlafen dürfen.	They had not been allowed to sleep.	You had not been allowed to sleep.	They were not allowed to sleep.	You shouldn't have slept.
+deen	Verb tense/aspect/mood	Modal negated - present	Du sollst nicht schlafen.	You're not supposed to sleep.	You shall not sleep.	You shouldn't sleep.	You must not sleep.
+deen	Verb tense/aspect/mood	Modal negated - present	Sie will nicht schlafen.	She doesn't want to sleep.	She does not want to sleep.	It does not want to sleep.	You don't want to sleep.
+deen	Verb tense/aspect/mood	Modal negated - present	Ihr könnt nicht schlafen.	You cannot sleep.	You can't sleep.	Let her not sleep.	You can not sleep.
+deen	Verb tense/aspect/mood	Modal negated - preterite	Wir mussten nicht schlafen.	We did not have to sleep.	We didn't have to sleep.	We were not sleeping.	We don't sleep.
+deen	Verb tense/aspect/mood	Modal negated - preterite	Ihr durftet nicht schlafen.	You weren't allowed to sleep.	You were not allowed to sleep.	They are not going to sleep.	You do not sleep.
+deen	Verb tense/aspect/mood	Modal negated - preterite	Sie konnten nicht schlafen.	They could not sleep.	You couldn't sleep.	They weren't sleep.	They were not sleeping.
+deen	Verb tense/aspect/mood	Progressive	Lena backt gerade einen Kuchen.	Lena is baking a cake.	Lena is baking a cake right now.	Lena is just baking a cake.	Lena bakes just a cake.
+deen	Verb tense/aspect/mood	Progressive	Karl arbeitet gerade.	Karl is working right now.	Karl is working.	Karl works.	Karl is just working.
+deen	Verb tense/aspect/mood	Progressive	Karl ist einkaufen.	Karl is shopping.	Karl's shopping.	Karl is groceries.	Karl is buys.
+deen	Verb tense/aspect/mood	Reflexive - future I	Ich werde mich konzentrieren.	I'm going to concentrate.	I will focus.		
+deen	Verb tense/aspect/mood	Reflexive - future I	Du wirst dich konzentrieren.	You will concentrate.	You're gonna focus.	You will concentrate on you.	You'll focus me.
+deen	Verb tense/aspect/mood	Reflexive - future I	Er wird sich konzentrieren.	He will concentrate.	He's going to concentrate.	It will concentrate.	He will get them.
+deen	Verb tense/aspect/mood	Reflexive - perfect	Ich habe mich konzentriert.	I focused.	I've been concentrating.	I've focused me.	I have focussed.
+deen	Verb tense/aspect/mood	Reflexive - perfect	Du hast dich konzentriert.	You have concentrated.	You concentrated.	You have to concentrate.	You have concentrated you.
+deen	Verb tense/aspect/mood	Reflexive - perfect	Er hat sich konzentriert.	He's focused.	He has concentrated.		It has concentrated.
+deen	Verb tense/aspect/mood	Reflexive - pluperfect	Wir hatten uns konzentriert.	We had concentrated.	We had focused.	We had our focus.	We've been focused.
+deen	Verb tense/aspect/mood	Reflexive - pluperfect	Ihr hattet euch konzentriert.	You had concentrated.		You had concentrated you.	You were focused.
+deen	Verb tense/aspect/mood	Reflexive - pluperfect	Sie hatten sich konzentriert.	They had concentrated.	They had been concentrating.	They had focussed.	
+deen	Verb tense/aspect/mood	Reflexive - present	Ich konzentriere mich.	I'm concentrating.	I concentrate.	I concentrating myself.	I'm trying to concentrate.
+deen	Verb tense/aspect/mood	Reflexive - present	Du konzentrierst dich.	You're concentrating.	You focus.	You focus on you.	You will concentrate first.
+deen	Verb tense/aspect/mood	Reflexive - present	Er konzentriert sich.	He's focused.	He focuses.	It is concentrated.	It concentrates.
+deen	Verb tense/aspect/mood	Reflexive - preterite	Wir konzentrierten uns.	We concentrated.	We focused.	We concentrating us concentrating.	
+deen	Verb tense/aspect/mood	Reflexive - preterite	Ihr konzentriertet euch.	You concentrated.	You've been concentrating.	You will be concentrated.	You concentrate on you.
+deen	Verb tense/aspect/mood	Reflexive - preterite	Sie konzentrierten sich.	They focused.	They concentrated.	They are concentrating.	
+deen	Verb tense/aspect/mood	Transitive - future I	Ich werde das Auto sehen.	I'll see the car.	I'm going to see the car.		
+deen	Verb tense/aspect/mood	Transitive - future I	Du wirst das Auto sehen.	You'll see the car.	You will see the car.		
+deen	Verb tense/aspect/mood	Transitive - future I	Er wird das Auto sehen.	He will see the car.	He'll see the car.		
+deen	Verb tense/aspect/mood	Transitive - perfect	Ich habe das Auto gesehen.	I saw the car.	I've seen the car.	I haven't seen the car.	
+deen	Verb tense/aspect/mood	Transitive - perfect	Du hast das Auto gesehen.	You've seen the car.	You saw the car.	You're seen the car.	
+deen	Verb tense/aspect/mood	Transitive - perfect	Er hat das Auto gesehen.	He saw the car.	He's seen the car.		
+deen	Verb tense/aspect/mood	Transitive - pluperfect	Wir hatten das Auto gesehen.	We had seen the car.		We saw the car.	We've seen the car.
+deen	Verb tense/aspect/mood	Transitive - pluperfect	Ihr hattet das Auto gesehen.	You had seen the car.		Her hattet has seen the car.	You saw the car.
+deen	Verb tense/aspect/mood	Transitive - pluperfect	Sie hatten das Auto gesehen.	You had seen the car.	They had seen the car.	You saw the car.	
+deen	Verb tense/aspect/mood	Transitive - present	Ich sehe das Auto.	I see the car.		I thought the car was.	
+deen	Verb tense/aspect/mood	Transitive - present	Du siehst das Auto.	You see the car.	You're seeing the car.	You don't see the car.	
+deen	Verb tense/aspect/mood	Transitive - present	Er sieht das Auto.	He sees the car.			
+deen	Verb tense/aspect/mood	Transitive - preterite	Wir sahen das Auto.	We saw the car.			
+deen	Verb tense/aspect/mood	Transitive - preterite	Ihr saht das Auto.	You saw the car.		You see the car.	You saht the car.
+deen	Verb tense/aspect/mood	Transitive - preterite	Sie sahen das Auto.	They saw the car.	You saw the car.		
+deen	Verb valency	Case government	Lisa hat ihre Mutter belogen.	Lisa lied to her mother.	Lisa has lied to her mother.	Lisa deceived its mother.	
+deen	Verb valency	Case government	Ich schäme mich für ihn. 	I'm ashamed of him.	I am ashamed for him.		I apologize for him.
+deen	Verb valency	Case government	Ich erinnere mich seiner.	I remember him.		I remember his.	I remember of his.
+deen	Verb valency	Mediopassive voice	Dieses Hemd wäscht sich gut. 	This shirt washes well.		This shirt washes itself well.	This shirt watering them well.
+deen	Verb valency	Mediopassive voice	Dieses Buch verkauft sich sehr gut. 	This book sells very well.		This book sells itself very well.	This book sells them very well.
+deen	Verb valency	Mediopassive voice	Diese Farbe lässt sich gleichmäßig auftragen. 	This color can be applied evenly.	This color can be applied uniformly.	This color is hard to apply evenly.	This color can be given evenly.
+deen	Verb valency	Passive voice	Die Kerzen wurden durch den Wind ausgeblasen.	The candles were blown out by the wind.		The candles were ausgeblasen through the wind.	
+deen	Verb valency	Passive voice	Die Waschmaschine ist schon repariert worden.	The washing machine has already been repaired.	The washing machine was already repaired.		
+deen	Verb valency	Passive voice	Lisa wurde von Peter getröstet.	Lisa was comforted by Peter.			
+deen	Verb valency	Resultative predicates	Lena schneidet die Wurst in Scheiben.	Lena cuts the sausage into slices.	Lena slices the sausage.		
+deen	Verb valency	Resultative predicates	Sie trinkt die Tasse leer.	She drinks the cup empty.	She drinks up the cup.		
+deen	Verb valency	Resultative predicates	Sie kochte das Fleisch weich.	She cooked the meat soft.	She simmered the meat soft.	She cooked the meat softly.	

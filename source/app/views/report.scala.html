@@ -1,0 +1,809 @@
+@import play.api.libs.json.Json
+@main(2) {
+
+    <style>
+
+    </style>
+
+    <style>
+            canvas {
+                -moz-user-select: none;
+                -webkit-user-select: none;
+                -ms-user-select: none;
+            }
+    </style>
+
+    <script src='@routes.Assets.at("js/bootstrap-table.js")'></script>
+    <script src='@routes.Assets.at("js/bootstrap-table-filter-control.js")'></script>
+    <script src='@routes.Assets.at("js/bootstrap-table-editable.js")'></script>
+    <script src='@routes.Assets.at("js/Chart.bundle.min.js")'></script>
+    <script src='@routes.Assets.at("js/bootstrap-editable.js")'></script>
+
+    <script type="text/javascript" src='@routes.Assets.at("js/tableExport/tableExport.js")'></script>
+    <script type="text/javascript" src='@routes.Assets.at("js/tableExport/jquery.base64.js")'></script>
+    <script type="text/javascript" src='@routes.Assets.at("js/tableExport/html2canvas.js")'></script>
+    <script type="text/javascript" src='@routes.Assets.at("js/tableExport/jspdf/libs/sprintf.js")'></script>
+    <script src="https://unpkg.com/jspdf@@latest/dist/jspdf.min.js"></script>
+    <script type="text/javascript" src='@routes.Assets.at("js/tableExport/jspdf/libs/base64.js")'></script>
+
+
+    <div class="row">
+        <div class="panel panel-default">
+            <div class="panel-body">
+
+                <table data-toggle="table" id="reportTable"
+                data-height="220"
+                data-filter-control="true"
+                data-sort-name="id" data-sort-order="desc"
+                class="table-striped">
+                    <thead>
+                        <tr>
+                            <th data-field="delete" data-halign="center"></th>
+                            <th data-field="id" data-halign="center" data-sortable="true">Nr.</th>
+                            <th data-field="engine" data-halign="center" data-sortable="true" data-filter-control="select">
+                                Engine</th>
+                            <th data-field="type" data-halign="center" data-sortable="true" data-filter-control="select">
+                                Type</th>
+                            <th data-field="lang" data-halign="center" data-sortable="true" data-filter-control="select">
+                                Language</th>
+                            <th data-field="templateid" data-halign="center" data-sortable="true" data-editable="true" data-filter-control="select">
+                                Template ID</th>
+                            <th data-field="time" data-halign="center" data-sortable="true" data-filter-control="input">
+                                Time</th>
+                            <th data-field="comment" data-halign="center" data-editable="true" data-sortable="true" data-filter-control="input">
+                                Comment</th>
+                        </tr>
+                    </thead>
+                </table>
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="row">
+        <div class="panel panel-default col-lg-12" id="result-panel" style="margin-bottom: 0px;">
+            <div class="panel-body">
+                <div style="height: 80%" id="loaderContainer">
+                    <div id="loader"></div>
+                </div>
+
+                <div id="tableContent">
+                    <div class="row">
+
+                        <div id="toolbar">
+                            <button onClick ="applyTokens()" class="btn btn-warning btn-sm" id="btnApplyToken"><i class="glyphicon glyphicon-edit"></i>&nbsp; Apply Tokens &nbsp;<span id="tokenCount" class="badge">
+                                0</span></button>
+                                &nbsp;
+                            <button onClick ="skipTokens()" class="btn btn-warning btn-sm" id="btnSkipToken" style="padding-bottom: 6px;"><i class="glyphicon glyphicon-send"></i>&nbsp; Skip Tokens</button>
+
+                        </div>
+
+                        <table data-toggle="table" id="result-table"
+                        data-height="620"
+                        data-filter-control="true"
+                        data-pagination="true"
+                        data-page-size="100"
+                        data-sort-name="id" data-sort-order="asc"
+                        class="table-striped"
+                        data-row-style="rowStyle">
+                            <thead>
+                                <tr>
+                                    <th id="passColumn" data-field="pass" data-halign="center" data-filter-control="select"><i id="toggleWarning" class="glyphicon glyphicon-info-sign" style="color: black;
+                                        top: -3px;"></i></th>
+                                    <th data-field="id" data-halign="center" data-sortable="true" data-filter-control="input">
+                                        ID data point</th>
+                                    <th data-field="source" data-halign="center" data-sortable="true" data-filter-control="input">
+                                        Source</th>
+                                    <th data-field="category" data-halign="center" data-sortable="true" data-filter-control="select">
+                                        Category</th>
+                                    <th data-field="barrier" data-halign="center" data-sortable="true" data-filter-control="select">
+                                        Phenomenon</th>
+                                    <th data-field="translation" data-halign="center" data-sortable="true" data-filter-control="input">
+                                        Translation</th>
+                                    <th data-field="comment" data-halign="center" data-editable="true" data-sortable="true" data-filter-control="input">
+                                        Comment</th>
+                                    <th data-field="positiveTokens" data-visible="false" data-halign="center" >
+                                        PositiveTokens</th>
+                                    <th data-field="positiveRegex" data-visible="false" data-halign="center" >
+                                        PositiveRegex</th>
+                                    <th data-field="negativeTokens" data-visible="false" data-halign="center" >
+                                        NegativeTokens</th>
+                                    <th data-field="negativeRegex" data-visible="false" data-halign="center" >
+                                        NegativeRegex</th>
+                                </tr>
+                            </thead>
+                        </table>
+                    </div>
+
+                    <hr style="margin-top: 10px !important;
+                        margin-left: -50px !important;
+                        margin-right: -50px !important;" class="span12"/>
+                    <div class="row col-lg-12">
+                        Group by:
+                        <div class="btn-group" role="group" aria-label="...">
+                            <button type="button" class="btn btn-default b-or-c">category</button>
+                            <button type="button" class="btn btn-default active b-or-c">phenomenon</button>
+                        </div>
+
+                            &nbsp;&nbsp;show table with:
+                        <div class="btn-group" role="group" aria-label="...">
+                            <button type="button" class="btn btn-default np">number</button>
+                            <button type="button" class="btn btn-default active np">percentage</button>
+                        </div>
+
+                            &nbsp;&nbsp;
+                        <div class="btn-group" role="group" aria-label="...">
+                            <button type="button" class="btn btn-default active choosePercentage">Pass</button>
+                            <button type="button" class="btn btn-default choosePercentage">Fail</button>
+                            <button type="button" class="btn btn-default choosePercentage">Warning</button>
+                        </div>
+
+                        <div class="btn-group pull-right">
+                            <button class="btn btn-warning btn-sm dropdown-toggle" data-toggle="dropdown"><i class="glyphicon glyphicon-export"></i>
+                                Export Table Data</button>
+                            <ul class="dropdown-menu " role="menu">
+                                <li><a href="#" onClick ="$('#textTable').tableExport({
+                                    type: 'csv',
+                                    escape: 'false'
+                                });"> <img src='@routes.Assets.at("images/csv.png")' width='24px'> CSV</a></li>
+                                <li><a href="#" onClick ="$('#textTable').tableExport({
+                                    type: 'excel',
+                                    escape: 'false'
+                                });"> <img src='@routes.Assets.at("images/xls.png")' width='24px'> XLS</a></li>
+                                <li><a href="#" onClick ="$('#textTable').tableExport({
+                                    type: 'png',
+                                    escape: 'false'
+                                });"> <img src='@routes.Assets.at("images/png.png")' width='24px'> PNG</a></li>
+                                <li><a href="#" onClick ="$('#textTable').tableExport({
+                                    type: 'pdf',
+                                    pdfFontSize: '10',
+                                    escape: 'false'
+                                });"> <img src='@routes.Assets.at("images/pdf.png")' width='24px'> PDF</a></li>
+
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="row col-lg-12">
+                        <table id="textTable">
+                            <tr>
+                                <th id="tableEngine">DFKI</th>
+                                <th class="right">#</th>
+                                <th class="right" id="norp">%</th>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <div class="row col-lg-12">
+                        <div><b>Percentage: &nbsp;</b>
+
+
+                            <div class="btn-group pull-right">
+                                <button onClick ="$('#percentage-chart').tableExport({
+                                    type: 'png',
+                                    escape: 'false'
+                                });" class="btn btn-warning btn-sm dropdown-toggle" data-toggle="dropdown"><i class="glyphicon glyphicon-export"></i>
+                                    Export Graph</button>
+
+                            </div>
+                        </div>
+                        <div class="canvas-wrapper">
+                            <canvas class="main-chart" id="percentage-chart" height="300" width="600"></canvas>
+                        </div>
+
+                    </div>
+
+                    <div class="col-xs-12" style="height: 50px;"></div>
+
+                    <div class="row col-lg-12">
+                        <div><b>Statistics in number</b>
+                            <div class="btn-group pull-right">
+                                <button onClick ="$('#bar-chart').tableExport({
+                                    type: 'png',
+                                    escape: 'false'
+                                });" class="btn btn-warning btn-sm dropdown-toggle" data-toggle="dropdown"><i class="glyphicon glyphicon-export"></i>
+                                    Export Graph</button>
+
+                            </div>
+                        </div>
+                        <div class="canvas-wrapper">
+                            <canvas class="main-chart" id="bar-chart" height="300" width="600"></canvas>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="modal fade" id="orderModal" tabindex="-1">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
+                    <h3 id="myModalLabel">Delete</h3>
+                </div>
+                <div class="modal-body">
+                    <p></p>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+                    <button data-dismiss="modal" class="btn red" id="btnYes">Confirm</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="deleteModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
+            <h3 id="myModalLabel">Delete</h3>
+        </div>
+        <div class="modal-body">
+            <p id="confirmDeleteText"></p>
+        </div>
+        <div class="modal-footer">
+            <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+            <button data-dismiss="modal" class="btn btn-danger" id="btnDeleteConfirm" onclick="deleteReport()">Confirm</button>
+        </div>
+    </div>
+
+    <script src='@routes.Assets.at("js/qt21/resultTable.js")'></script>
+    <script>
+
+
+
+            var hasReport = true;
+            var chartData;
+
+
+            var reportAll = @Html(Json.stringify(Report.getFull()));
+
+            var lastReport = reportAll[0];
+
+            var direction = lastReport.lang;
+
+            var reportid = lastReport.id;
+
+            var deleteid;
+
+            reload(reportid);
+
+            for (var i = 0; i < reportAll.length; i++) {
+                //add remove button to the front of each row
+                reportAll[i]["delete"] = "⛔"//"<i class='glyphicon glyphicon-remove-circle' style='color:red'></i>";
+            }
+
+            $(function () {
+
+                $('#reportTable').bootstrapTable('load', reportAll);
+
+                $('#reportTable').find('tbody').find('tr').first().addClass('active');
+
+                $('#reportTable').on('click-row.bs.table',
+                        function (e, row, element, field) {
+                            if (field === 'delete') {
+                                $('#orderModal').modal('show');
+                                $('.modal-content').html($('#deleteModal').html());
+                                deleteid = row.id;
+                                $('#confirmDeleteText').html("Are you sure you want to remove report (ID: " + deleteid + ", Engine: " + row.engine + ", Type: " + row.type + ", Time: " + row.time + ") ?");
+
+                                return;
+                            }
+
+//                else if(field==='comment'){
+//                    return;
+//                }
+//                else if(field==='templateid')
+//                    return;
+
+                            reportid = row.id;
+                            direction = row.lang;
+                            reload(reportid);
+                            element.addClass('active').siblings().removeClass('active');
+
+                            tokens = {};
+                            $('#tokenCount').html('0');
+                        }
+                );
+
+            });
+
+            $(document).keyup(function (e) {
+                if ($("#gotoPage:focus") && (e.keyCode === 13)) {
+                    $('#result-table').bootstrapTable('refreshOptions', {pageNumber: $("#gotoPage").val()});
+                    $("li:contains(" + $("#gotoPage").val() + ")").toggleClass('active');
+                }
+            });
+
+            $('#reportTable').on('editable-save.bs.table', function (e, row, element, $detail) {
+
+
+                $.ajax({
+                    type: 'POST',
+                    url: '/updateReportComment',
+                    data: JSON.stringify({'reportid': element['id'], 'value': element}),
+                    success: function (data) {
+                    },
+                    contentType: 'application/json',
+                    dataType: 'json'
+                });
+            });
+
+
+            function deleteReport() {
+                $.ajax({
+                    type: 'POST',
+                    url: '/deleteReport',
+                    data: JSON.stringify({
+                        'id': deleteid
+                    }),
+                    beforeSend: function (data) {
+                    },
+                    success: function (data) {
+                        $('#reportTable').bootstrapTable('remove', {field: 'id', values: [deleteid]});
+                        if (deleteid === reportid) {
+                            console.log('set to first row after deletion.');
+                            reload($('#reportTable').bootstrapTable('getData')[0].id);
+                            $('#reportTable').find('tbody').first().find('tr').first().addClass('active').siblings().removeClass('active');
+                            $('#reportTable').bootstrapTable('scrollTo', 'top');
+                        }
+                    },
+                    contentType: 'application/json',
+                    dataType: 'json'
+                });
+            }
+
+            var borc = 'barrier';
+            $('.b-or-c').click(function () {
+                borc = this.innerHTML;
+                if (borc === 'phenomenon') borc = 'barrier'
+                //reload(reportid);
+                refreshChart(chartData);
+                $('.b-or-c').toggleClass('active');
+            });
+
+            var norp = 'percentage';
+            $('.np').click(function () {
+                norp = this.innerHTML;
+                refreshChart(chartData);
+                $('.np').toggleClass('active');
+            });
+
+            var chosenPercentage = ['Pass'];
+            $('.choosePercentage').click(function () {
+                if(chosenPercentage.includes(this.innerHTML)){
+                    chosenPercentage.splice(chosenPercentage.indexOf(this.innerHTML),1);
+                    $(this).removeClass('active');
+                }
+                else{
+                    chosenPercentage.push(this.innerHTML);
+                    $(this).addClass('active');
+                    chosenPercentage.sort(function (a,b) {
+                        let compareArray=["Pass","Fail","Warning"];
+                        return compareArray.indexOf(a)-compareArray.indexOf(b);
+                    })
+                }
+                refreshChart(chartData);
+            });
+
+            function reload(newid) {
+                if (hasReport) {
+                    $.ajax({
+                        type: 'POST',
+                        url: '/getReport',
+                        data: JSON.stringify({
+                            'id': newid,
+                            'direction': direction
+                        }),
+                        beforeSend: function (data) {
+                            $('#result-panel').css("display", "block");
+                            document.getElementById("loaderContainer").style.display = "block";
+                            document.getElementById("tableContent").style.display = "none";
+                        },
+                        success: function (data) {
+                            refreshTable(data);
+                            refreshChart(data);
+                            chartData = data;
+                            document.getElementById("loaderContainer").style.display = "none";
+                            document.getElementById("tableContent").style.display = "block";
+                        },
+                        contentType: 'application/json',
+                        dataType: 'json'
+                    });
+                } else {
+                    document.getElementById("loaderContainer").style.display = "none";
+                    document.getElementById("tableContent").style.display = "none";
+                }
+            }
+
+            var percentageData = {
+                labels: [],
+                datasets: []
+            }
+            var ctx2 = document.getElementById("percentage-chart").getContext("2d");
+            window.myBarPercentage = new Chart(ctx2, {
+                type: 'bar',
+                data: percentageData,
+                options: {
+                    responsive: true,
+                    title: {
+                        display: true,
+                        text: ''
+                    },
+                    legend: {
+                        display: false
+                    },
+                    tooltips: {
+                        enabled: true,
+                        mode: 'single',
+                        callbacks: {
+                            label: function (tooltipItems, data) {
+                                return tooltipItems.yLabel + '%';
+                            }
+                        }
+                    },
+                    scales: {
+                        yAxes: [{
+                            stacked: true,
+                            ticks: {
+                                beginAtZero: true,
+                                max: 100,
+                                maxTicksLimit: 5,
+                                callback: function (value, index, values) {
+                                    return value + '%';
+                                }
+                            }
+                        }],
+                        xAxes: [{
+                            stacked: true,
+                            ticks: {
+                                autoSkip: false,
+                                maxTicksLimit: 20
+                            }
+                        }]
+                    }
+                }
+            });
+
+            var barChartData = {
+                labels: [],
+                datasets: []
+            }
+            var ctx = document.getElementById("bar-chart").getContext("2d");
+
+            window.myBar = new Chart(ctx, {
+                type: 'bar',
+                data: barChartData,
+                options: {
+                    responsive: true,
+                    title: {
+                        display: true,
+                        text: ''
+                    },
+                    legend: {
+                        display: false
+                    },
+                    scales: {
+                        yAxes: [{
+                            stacked: false,
+                            ticks: {
+                                beginAtZero: true,
+                                callback: function (value) {
+                                    if (value % 1 === 0) {
+                                        return value;
+                                    }
+                                }
+                            }
+                        }],
+                        xAxes: [{
+                            stacked: false,
+                            ticks: {
+                                autoSkip: false,
+                                maxTicksLimit: 20
+                            }
+                        }]
+                    }
+                }
+            });
+
+            Chart.plugins.register({
+                afterDatasetsDraw: function (chart, easing) {
+                    // To only draw at the end of animation, check for easing === 1
+                    var ctx = chart.ctx;
+
+                    chart.data.datasets.forEach(function (dataset, i) {
+                        var meta = chart.getDatasetMeta(i);
+                        if (!meta.hidden) {
+                            meta.data.forEach(function (element, index) {
+                                // Draw the text in black, with the specified font
+                                if (dataset.data[index] == 0) return;
+                                if (dataset.data[index] == null) return;
+                                ctx.fillStyle = 'rgb(0, 0, 0)';
+
+                                var fontSize = 10;
+                                var fontStyle = 'normal';
+                                var fontFamily = 'Helvetica Neue';
+                                ctx.font = Chart.helpers.fontString(fontSize, fontStyle, fontFamily);
+
+                                // Just naively convert to string for now
+                                var dataString = dataset.data[index].toString() + (chart.id === 0 ? '%' : '');
+
+                                // Make sure alignment settings are correct
+                                ctx.textAlign = 'center';
+                                ctx.textBaseline = 'middle';
+
+                                var padding = 5;
+                                var position = element.tooltipPosition();
+                                ctx.fillText(dataString, position.x, position.y - (fontSize / 2) - padding + 20);
+
+                            });
+                        }
+                    });
+                }
+            });
+
+            var samples;
+
+            $("#percentage-chart").click(function (e) {
+                var activeBars = myBarPercentage.getElementAtEvent(e);
+                var label = activeBars[0]._model['label'];
+                var pass = $('.choosePercentage.active')[0].innerHTML;
+                if (activeBars[0]._model['datasetLabel'])
+                    pass = activeBars[0]._model['datasetLabel'];
+
+                samples = $.grep(chartData, function (v) {
+                    var filter = 'ok';
+                    if (pass === 'Fail') filter = 'remove';
+                    else if (pass === 'Warning') filter = 'alert'
+                    return v['pass'].indexOf(filter) > 0 && (v['category'] === label || v['barrier'] === label);
+                });
+
+
+                $.get('/getSampleSentences',
+                        function (res) {
+                            $('.modal-content').html(res);
+
+                        });
+
+                $('#orderModal').modal('show');
+            });
+
+            $("#bar-chart").click(function (e) {
+                var activeBars = myBar.getElementAtEvent(e);
+                var label = activeBars[0]._model['label'];
+                var pass = $('.choosePercentage.active')[0].innerHTML;
+                if (activeBars[0]._model['datasetLabel'])
+                    pass = activeBars[0]._model['datasetLabel'];
+
+                samples = $.grep(chartData, function (v) {
+                    var filter = 'ok';
+                    if (pass === 'Fail') filter = 'remove';
+                    else if (pass === 'Warning') filter = 'alert'
+                    return v['pass'].indexOf(filter) > 0 && (v['category'] === label || v['barrier'] === label);
+                });
+
+
+                $.get('/getSampleSentences',
+                        function (res) {
+                            $('.modal-content').html(res);
+
+                        });
+
+                $('#orderModal').modal('show');
+            });
+
+            function showSamples(label, p) {
+                var pass = p === '' ? $('.choosePercentage.active')[0].innerHTML : p;
+                samples = $.grep(chartData, function (v) {
+                    var filter = 'ok';
+                    if (pass === 'Fail') filter = 'remove';
+                    else if (pass === 'Warning') filter = 'alert'
+                    return v['pass'].indexOf(filter) > 0 && (v['category'] === label || v['barrier'] === label);
+                });
+
+
+                $.get('/getSampleSentences',
+                        function (res) {
+                            $('.modal-content').html(res);
+
+                        });
+
+                $('#orderModal').modal('show');
+            }
+
+
+            function refreshChart(data) {
+                var labels = new Array();
+                var passMap = new Map();
+                var failMap = new Map();
+                var warnMap = new Map();
+
+                for (i = 0; i < data.length; i++) {
+                    var temp = data[i];
+
+                    var barrier = temp[borc];
+
+                    var theMap;
+                    if (temp['pass'] === "<i class='glyphicon glyphicon-ok isBlocked' style='color:black'></i>") theMap = passMap;
+                    else if (temp['pass'] === "<i class='glyphicon glyphicon-remove isBlocked' style='color:black'></i>") theMap = failMap;
+                    else theMap = warnMap;
+
+                    if (theMap.has(barrier)) {
+                        theMap.set(barrier, theMap.get(barrier) + 1);
+                    } else {
+                        theMap.set(barrier, 1);
+                    }
+
+                    if (labels.indexOf(barrier) === -1) labels.push(barrier);
+                }
+
+                var passData = new Array();
+                var failData = new Array();
+                var warnData = new Array();
+
+                var pData = [];
+
+                var totaldata = [];
+
+                for (i = 0; i < labels.length; i++) {
+                    var label = labels[i];
+                    if (passMap.has(label)) passData.push(passMap.get(label));
+                    else passData.push(0);
+
+                    if (failMap.has(label)) failData.push(failMap.get(label));
+                    else failData.push(0);
+
+                    if (warnMap.has(label)) warnData.push(warnMap.get(label));
+                    else warnData.push(0);
+
+                    var passp = passMap.has(label) ? passMap.get(label) : 0;
+                    var failp = failMap.has(label) ? failMap.get(label) : 0;
+                    var warnp = warnMap.has(label) ? warnMap.get(label) : 0;
+                    var total = passp + failp + warnp;
+                    totaldata.push(total);
+                    if (total === 0)
+                        pData.push([0.0,0.0,0.0]);
+                    else {
+                        let tempData=[0.0,0.0,0.0];
+                        chosenPercentage.forEach(function (option) {
+                            switch(option){
+                                case 'Pass':tempData[0]=((passp / total) * 100).toFixed(1);break;
+                                case 'Fail':tempData[1]=((failp / total) * 100).toFixed(1);break;
+                                case 'Warning':tempData[2]=((warnp / total) * 100).toFixed(1);break;
+                            }
+                        });
+                        pData.push(tempData);
+                    }
+                }
+
+                //need to sort this alphabetically too
+                var nlabels = [];
+                var np = [];
+                var nf = [];
+                var nw = [];
+                var ntotal = [];
+
+                nlabels.push(labels[0]);
+                np.push(passData[0]);
+                nf.push(failData[0]);
+                nw.push(warnData[0]);
+                ntotal.push(totaldata[0]);
+
+                for (i = 1; i < labels.length; i++) {
+                    var j = 0;
+                    for (; labels[i] > nlabels[j]; j++);
+                    nlabels.splice(j, 0, labels[i]);
+
+                    np.splice(j, 0, passData[i]);
+                    nf.splice(j, 0, failData[i]);
+                    nw.splice(j, 0, warnData[i]);
+                    ntotal.splice(j, 0, totaldata[i]);
+                }
+
+                barChartData.labels = nlabels;
+                barChartData.datasets = [{
+                    label: 'Pass',
+                    backgroundColor: "rgb(66, 244, 72)",
+                    data: np
+                },
+                    {
+                        label: 'Fail',
+                        backgroundColor: "rgb(232, 16, 16)",
+                        data: nf
+                    },
+                    {
+                        label: 'Warning',
+                        backgroundColor: "rgb(244, 241, 65)",
+                        data: nw
+                    }
+                ];
+
+                window.myBar.update();
+
+
+                percentageData.labels = nlabels;
+                percentageData.datasets=[];
+                chosenPercentage.forEach(function (option) {
+                   switch(option){
+                       case 'Pass':
+                           percentageData.datasets.push(
+                               {
+                               label: 'Pass',
+                               backgroundColor: "rgb(66, 244, 72)",
+                               data: np.map(function (x, i) {
+                                   return (x / ntotal[i] * 100).toFixed(1)
+                               })
+                           });break;
+                       case 'Fail':
+                           percentageData.datasets.push(                    {
+                               label: 'Fail',
+                               backgroundColor: "rgb(232, 16, 16)",
+                               data: nf.map(function (x, i) {
+                                   return (x / ntotal[i] * 100).toFixed(1)
+                               })
+                           });break;
+                       case 'Warning':
+                           percentageData.datasets.push(                    {
+                               label: 'Warning',
+                               backgroundColor: "rgb(244, 241, 65)",
+                               data: nw.map(function (x, i) {
+                                   return (x / ntotal[i] * 100).toFixed(1)
+                               })
+                           });break;
+                   }
+                });
+
+                window.myBarPercentage.update();
+
+
+                //now the text table
+                let textTable=$("#textTable");
+                textTable.empty().append(`<thead><tr><th>${lastReport.engine + ' (' + lastReport.type + ')'}</th><th class="right">#</th></tr></thead><tbody></tbody>`);
+                chosenPercentage.forEach(function(option){
+                    textTable.find("thead tr").append(`<th class="right">${option}</th>`);
+                });
+
+                var allp = 0, allf = 0, allw = 0;
+                var sum = 0;
+                for (i = 0; i < labels.length; i++) {
+                    let total = passData[i] + failData[i] + warnData[i];
+
+                    let newTableRow=$(`<tr><td>${labels[i]}</td><td class="right">${total}</td></tr>`);
+                    chosenPercentage.forEach(function (option) {
+                        switch(option){
+                            case 'Pass':newTableRow.append("<td class='right' onclick=\"showSamples(\'" + labels[i] + "\',\'Pass\')\">" + (norp === 'percentage' ? ((passData[i] / total) * 100).toFixed(2) + '%' : passData[i]) + '</td>');break;
+                            case 'Fail':newTableRow.append("<td class='right' onclick=\"showSamples(\'" + labels[i] + "\',\'Fail\')\">" + (norp === 'percentage' ? ((failData[i] / total) * 100).toFixed(2) + '%' : failData[i]) + '</td>');break;
+                            case 'Warning':newTableRow.append("<td class='right' onclick=\"showSamples(\'" + labels[i] + "\',\'Warning\')\">" + (norp === 'percentage' ? ((warnData[i] / total) * 100).toFixed(2) + '%' : warnData[i]) + '</td>');break;
+                        }
+                    });
+                    textTable.find("tbody").append(newTableRow);
+                    allp += passData[i];
+                    allf += failData[i];
+                    allw += warnData[i];
+                    sum += total;
+                }
+                textTable.find("tbody").append('<tr><td>Sum</td><td class="right">' + sum + '</td></tr>');
+                let lastRow=$("<tr><td>Average</td><td></td></tr>");
+                chosenPercentage.forEach(function (option) {
+                    switch(option){
+                        case 'Pass':lastRow.append(`<td class="right">${(allp / sum * 100).toFixed(2)}%</td>`);break;
+                        case 'Fail':lastRow.append(`<td class="right">${(allf / sum * 100).toFixed(2)}%</td>`);break;
+                        case 'Warning':lastRow.append(`<td class="right">${(allw / sum * 100).toFixed(2)}%</td>`);break;
+                    }
+                });
+                textTable.find("tbody").append(lastRow);
+
+
+            }
+
+            //reload(reportid);
+
+
+
+    </script>
+
+
+}
