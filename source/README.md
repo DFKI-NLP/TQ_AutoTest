@@ -1,7 +1,7 @@
 # QT21 #
 
 ## Project ##
-This project is the web app of QT21, written in scala with Play framework, current deployed on http://lnv-3233.sb.dfki.de:9000/
+This project is the web app of QT21, written in scala with Play framework
 
 ### Debug ###
 run
