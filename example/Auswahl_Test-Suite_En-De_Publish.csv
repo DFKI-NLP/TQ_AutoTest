@@ -1,0 +1,367 @@
+﻿direction;category;phenomenon;source;correct;correct2;incorrect;incorrect2
+ende;Ambiguity;Lexical ambiguity;He ​covered the ​meat in a hot ​chilli ​sauce.;Er bedeckte das Fleisch mit einer scharfen Chilisauce.;Er deckte das Fleisch mit einer scharfen Chilisauce zu.;Er bedeckte das Fleisch mit einer heißen Chilisauce.;Er bedeckte das Fleisch in einer heißen Chilisauce.
+ende;Ambiguity;Lexical ambiguity;The woman hit the burglar with the bat.;Die Frau schlug mit dem Schläger auf den Einbrecher ein.;Die Frau schlug den Einbrecher mit dem Schläger.;Die Frau schlug mit der Fledermaus auf den Einbrecher ein.;Die Frau hat den Einbrecher mit der Fledermaus geschlagen.
+ende;Ambiguity;Lexical ambiguity;I bought a plate made of china.;Ich kaufte einen Teller aus Porzellan.;Ich kaufte einen Teller, der vom Porzellan gebildet wurde.;Ich kaufte einen Teller aus China.;Ich habe einen Teller aus China gekauft.
+ende;Coordination & ellipsis;Gapping;John will guard the children, and Bill the animals.;John wird die Kinder bewachen und Bill die Tiere.;John wird die Kinder beschützen und Bill die Tiere.;John wird die Kinder bewachen und die Tiere beschützen.;John wird die Kinder bewachen, und Bill die Tiere.
+ende;Coordination & ellipsis;Gapping;Fred likes to pet the cat, and Sally the dog.;Fred streichelt gerne die Katze und Sally den Hund.;;Fred liebt es, die Katze zu streicheln, und Sally den Hund.;Fred streichelt gerne die Katze, und Sally den Hund.
+ende;Coordination & ellipsis;Gapping;The cars were old-fashioned, and the buses too.;Die Autos waren altmodisch und die Busse auch.;Die Autos waren altmodisch, die Busse auch.;Die Autos waren altmodisch, und die Busse auch.;
+ende;Coordination & ellipsis;Pseudogapping;She asks you to help more often than she does me.;Sie bittet dich öfter zu helfen als sie mich.;Sie bittet dich öfter um Hilfe als mich.;Sie bittet Sie öfters um Hilfe als mich.;Sie bittet dich, öfter zu helfen, als sie es bei mir tut.
+ende;Coordination & ellipsis;Pseudogapping;Jackie likes the doctor but she doesn't the nurse.;Jackie mag den Arzt, aber die Krankenschwester mag sie nicht.;Jackie mag den Arzt, aber nicht die Krankenschwester.;Jackie mag den Arzt, aber sie nicht die Krankenschwester.;Jackie mag den Arzt, aber sie ist nicht die Krankenschwester.
+ende;Coordination & ellipsis;Pseudogapping;John will select me, and Bill will you.;John wird mich auswählen und Bill Sie.;John wird mich auswählen und Bill wird dich auswählen.;John wählt mich, und Bill werden Sie.;John wird mich wählen, und Bill wird Sie.
+ende;Coordination & ellipsis;Right node raising;Fred prepares and Susan eats the food.;Fred bereitet das Essen vor und Susan isst es.;Fred bereitet das Essen zu und Susan isst es.;Fred bereitet sich vor und Susan isst das Essen.;Fred bereitet vor und Susan isst das Essen.
+ende;Coordination & ellipsis;Right node raising;John talked about and Mary ignored yesterday's events.;John sprach über und Mary ignorierte die gestrigen Ereignisse.;John sprach über und Maria ignorierte die gestrigen Ereignisse.;John sprach darüber und Mary ignorierte die gestrigen Ereignisse;Johannes sprach darüber und Maria ignorierte die gestrigen Ereignisse.
+ende;Coordination & ellipsis;Right node raising;Peter donated some books and Lisa some toys to the orphanage.;Peter spendete dem Waisenhaus einige Bücher und Lisa einige Spielsachen.;Peter spendete einige Bücher und Lisa einige Spielsachen an das Waisenhaus.;Peter gespendet einige Bücher und Lisa ein paar Spielsachen zum Waisenhaus.;
+ende;Coordination & ellipsis;Sluicing;She insulted somebody but she won't tell me who.;Sie hat jemanden beleidigt, aber sie will mir nicht sagen, wen.;;Sie hat jemanden beleidigt, aber sie sagt mir nicht, wer.;Sie beleidigte jemanden, aber sie wird mir nicht sagen, wer.
+ende;Coordination & ellipsis;Sluicing;They made an offer to a doctor, but I'm not sure which one.;Sie haben einem Arzt ein Angebot gemacht, aber ich bin mir nicht sicher, welchem.;;Sie haben einem Arzt ein Angebot gemacht, aber ich bin mir nicht sicher welcher.;Sie machten ein Angebot an einen Arzt, aber ich bin nicht sicher, welcher.
+ende;Coordination & ellipsis;Sluicing;He sent a package, but I can't find out to whom.;Er hat ein Paket geschickt, aber ich kann nicht herausfinden, an wen.;Er schickte ein Paket, aber ich kann nicht herausfinden, an wen.;Er schickte ein Paket, aber ich kann die nicht herausfinden.;
+ende;Coordination & ellipsis;Stripping;Why did Sam call, and Bill too?;Warum hat Sam angerufen und Bill auch?;Warum rief Sam an und Bill auch?;Warum hat Sam nennen, und auch Bill?;Warum hat Sam angerufen, und Bill auch?
+ende;Coordination & ellipsis;Stripping;Walt Whitman wrote poetry, and Pablo Neruda too.;Walt Whitman schrieb Gedichte, Pablo Neruda auch.;Walt Whitman hat Gedichte geschrieben, Pablo Neruda auch.;Walt Whitman schrieb Gedichte, und Pablo Neruda auch.;Walt Whitman schrieb Gedichte, und zu Pablo Neruda.
+ende;Coordination & ellipsis;Stripping;Sam did the dishes, not Bill.;Sam hat den Abwasch gemacht, nicht Bill.;Sam machte den Abwasch, nicht Bill.;Sam hat die Gerichte, nicht Bill.;Sam tat die Teller, nicht Bill.
+ende;Coordination & ellipsis;VP-ellipsis;He is thinking the same thing I am.;Er denkt das Gleiche wie ich.;Er denkt dasselbe wie ich.;Er denkt das gleiche, was ich bin.;Er denkt dasselbe, was ich bin.
+ende;Coordination & ellipsis;VP-ellipsis;I can help you if you want me to.;Ich kann dir helfen, wenn du willst.;Ich kann Ihnen helfen, wenn Sie es wünschen.;Ich kann Ihnen helfen, wenn Sie wollen, dass ich.;Ich kann Ihnen helfen, wenn Sie wollen, dass ich zu.
+ende;Coordination & ellipsis;VP-ellipsis;Mary will leave before John will.;Maria wird gehen, bevor Johannes geht.;Mary wird gehen, bevor John wird.;Maria wird vor John Willen verlassen.;Mary wird gehen, bevor John es will.
+ende;False friends;False friends;She was irritated with Sara.;Sie war genervt von Sara.;Sie ärgerte sich über Sara.;Sie war irritiert von Sara.;Sie war irritiert über Sara.
+ende;False friends;False friends;Delicate plants need to be kept in a greenhouse during the winter.;Empfindliche Pflanzen müssen in einem Gewächshaus im Winter gehalten werden.;Zarte Pflanzen müssen im Winter in einem Gewächshaus gehalten werden.;In Delica-Anlagen muss im Winter ein Treibhauseffekt gehalten werden.;
+ende;False friends;False friends;He was as brave as a lion.;Er war mutig wie ein Löwe.;Er war tapfer wie ein Löwe.;;
+ende;Function word;Focus particle;If only John sends me flowers I will be disappointed.;Wenn nur John mir Blumen schickt, werde ich enttäuscht sein.;Wenn mir nur John Blumen schickt, werde ich enttäuscht sein.;Wenn John mir nur Blumen schickt, werde ich enttäuscht sein.;
+ende;Function word;Focus particle;Even Lisa went to Berlin.;Sogar Lisa ging nach Berlin.;Sogar Lisa ist nach Berlin gegangen.;Auch Lisa ist nach Berlin gefahren.;Auch ging Lisa nach Berlin.
+ende;Function word;Focus particle;I merely said that you were mistaken.;Ich sagte nur, dass Sie sich geirrt haben.;Ich habe nur gesagt, dass Sie falsch waren.;;
+ende;Function word;Question tag;John and Mary didn't pay for their meal, did they?;Johannes und Maria haben nicht für ihr Essen bezahlt, oder?;John und Mary haben ihr Essen nicht bezahlt, oder?;John und Mary zahlten ihr Essen, haben sie getan?;John und Mary haben nicht für ihre Mahlzeit bezahlt, oder
+ende;Function word;Question tag;There are two students waiting outside, aren't there?;Zwei Studenten warten draußen, nicht wahr?;Draußen warten zwei Studenten, nicht wahr?;Es gibt zwei Studenten draußen warten, gibt es nicht?;Draußen warten zwei Studenten, nicht wahr
+ende;Function word;Question tag;You haven't seen Kate, have you?;Sie haben Kate nicht gesehen, oder?;Du hast Kate nicht gesehen, stimmt's?;Du hast Kate nicht gesehen, oder;
+ende;MWE;Collocation;We spent a lot of time together.;Wir haben viel Zeit miteinander verbracht.;Wir haben viel Zeit zusammen verbracht.;Wir haben schon sehr lange zusammengearbeitet.;Wir haben zusammen eine Menge Zeit.
+ende;MWE;Collocation;Lena laid the table for six.;Lena deckte den Tisch für sechs.;Lena deckte den Tisch für sechs Personen.;Lena legte den Tisch für sechs Personen.;Lena bereitete den Tisch für sechs Personen.
+ende;MWE;Collocation;Lena usually travels light.;Lena reist normalerweise mit leichtem Gepäck.;;Lena fährt in der Regel Licht.;Lena ist in der Regel leicht unterwegs.
+ende;MWE;Compound;I hope it will be a money-making enterprise.;Ich hoffe, es wird ein geldbringendes Unternehmen sein.;Ich hoffe, dass es ein geldbringendes Unternehmen sein wird.;Ich hoffe, es wird ein Geldverdienen Unternehmen sein.;Ich hoffe, es wird ein geldverarbeitendes Unternehmen sein.
+ende;MWE;Compound;These advertisements for the new car are eye-catching.;Diese Werbung für das neue Auto ist ein Blickfang.;Diese Werbung für das neue Auto fällt ins Auge.;;
+ende;MWE;Compound;John was a famous songwriter.;John war ein berühmter Songwriter.;John war ein berühmter Liedermacher.;;
+ende;MWE;Idiom;The workers had to bite the bullet.;Die Arbeiter mussten in den sauren Apfel beißen.;;Die Arbeitnehmer mussten in der Kugel beiwohnen.;Die Arbeiter mussten in die Kugel beißen.
+ende;MWE;Idiom;You have to keep an eye on this guy.;Man muss diesen Kerl im Auge behalten.;Man muss diesen Typen im Auge behalten.;Sie müssen ein Auge auf diesen Kerl.;
+ende;MWE;Idiom;The mafia boss has spilled the beans.;Der Mafiaboss hat sich verplappert.;Der Mafiaboss hat es ausgeplaudert.;Der Mafiaboss hat die Bohnen verschüttet.;Der Mafia-Boss hat die Bohnen verschüttet.
+ende;MWE;Nominal MWE;Lena showed that she had sufficient strength of character in that situation.;Lena zeigte, dass sie in dieser Situation über genügend Charakterstärke verfügte.;Lena zeigte, dass sie in dieser Situation über ausreichende Charakterstärke verfügte.;Lena hat gezeigt, dass sie eine ausreichende Festigkeit des Charakters in dieser Situation hatte.;Lena zeigte, daß sie genügende Stärke des Buchstabens in dieser Situation hatte.
+ende;MWE;Nominal MWE;I'd like to buy two bars of soap please.;Ich möchte bitte zwei Seifenstücke kaufen.;Ich möchte bitte zwei Stück Seife kaufen.;Ich möchte bitte zwei Seifenstangen kaufen.;Ich möchte bitte zwei Riegel Seife kaufen.
+ende;MWE;Nominal MWE;Let's give Mr Jones a round of applause.;Lassen Sie uns Herrn Jones eine Runde Applaus geben.;Einen Applaus für Herrn Jones.;;
+ende;MWE;Prepositional MWE;Some people support the measure, but the community at large will probably be against it.;Einige Leute unterstützen die Maßnahme, aber die gesamte Community wird wahrscheinlich dagegen sein.;Einige Leute unterstützen die Maßnahme, aber die Gemeinschaft insgesamt wird wahrscheinlich dagegen sein.;Manche Menschen unterstützen die Maßnahme, aber die Gemeinschaft zu groß wird wohl dagegen sein.;
+ende;MWE;Prepositional MWE;The two groups were similar with respect to age.;Hinsichtlich des Alters waren die beiden Gruppen ähnlich.;Die beiden Gruppen waren sich vom Alter her ähnlich.;;
+ende;MWE;Prepositional MWE;Lena had a different setup in mind.;Lena hatte ein anderes Setup im Sinn.;Lena hatte einen anderen Aufbau im Sinn.;Lena hatte eine andere Einrichtung im Auge behalten.;
+ende;MWE;Verbal MWE;She takes after her mother.;Sie kommt ganz nach ihrer Mutter.;;Sie ist hinter ihrer Mutter her.;Sie verfolgt ihre Mutter.
+ende;MWE;Verbal MWE;Lisa brought that topic up twice.;Lisa hat dieses Thema zweimal angesprochen.;Lisa brachte das Thema zweimal zur Sprache.;Lisa brachte dieses Thema zweimal.;Lisa brachte das Thema zweimal auf.
+ende;MWE;Verbal MWE;She had a smoke.;Sie hat eine Zigarette geraucht.;Sie hat geraucht.;Sie hatte einen Rauch.;Sie hatte eine Rauchentwicklung.
+ende;Named entitiy & terminology;Date;Marilyn Monroe was born as Norma Jeane Mortenson on June 1, 1926.;Marilyn Monroe wurde am 1. Juni 1926 als Norma Jeane Mortenson geboren.;Marilyn Monroe wurde als Norma Jeane Mortenson am 1. Juni 1926 geboren.;Marilyn Monroe wurde im Juni 1, 1926 geboren.;Marilyn Monroe wurde geboren als Norma Jeane Mortenson auf Juni 1, 1926.
+ende;Named entitiy & terminology;Date;12/7/1941, is the day on which Pearl Harbor was bombed.;07.12.1941, ist der Tag, an dem Pearl Harbor bombardiert wurde.;Der 7. Dezember 1941 ist der Tag, an dem Pearl Harbor bombardiert wurde.;1941.12.07, ist der Tag, an dem Pearl Harbor bombardiert wurde.;12 / 7 / 1941, ist der Tag, an dem Pearl Harbor bombardiert wurde.
+ende;Named entitiy & terminology;Date;Please deliver the package by the first of August.;Bitte liefern Sie das Paket bis zum 1. August.;Bitte geben Sie das Paket bis zum 1. August ab.;;
+ende;Named entitiy & terminology;Location;Franconia lies in Bavaria and Baden-Württemberg.;Franken liegt in Bayern und Baden-Württemberg.;;;
+ende;Named entitiy & terminology;Location;You have to visit Aix-la-Chapelle while in Germany!;;;Sie müssen Aix-la-Chapelle besuchen, während Sie in Deutschland sind!;Während Ihres Aufenthalts in Deutschland müssen Sie unbedingt die Aachener Kapelle besuchen!
+ende;Named entitiy & terminology;Location;The current Prime Minister of Lower Saxony is Stephan Weil.;Der derzeitige niedersächsische Ministerpräsident ist Stephan Weil.;Der amtierende niedersächsische Ministerpräsident ist Stephan Weil.;;
+ende;Named entitiy & terminology;Measuring unit;Stella had her hair cut six inches last week.;Stella hat sich letzte Woche 15 Zentimeter die Haare schneiden lassen.;Stella hatte ihre Haare schneiden sechs Zoll letzte Woche.;Stella ließ sich letzte Woche sechs Zentimeter die Haare schneiden.;Stella ließ sich letzte Woche die Haare zehn Zentimeter schneiden.
+ende;Named entitiy & terminology;Measuring unit;The newborn baby elephant in the Tierpark Berlin weighs about 2.2 pounds.;Die neugeborenen Baby-Elefanten im Tierpark Berlin wiegen etwa 2,2 Pfund.;;Das neugeborene Elefantenbaby im Tierpark Berlin wiegt etwa 2,2 Kilo.;Das neugeborene Elefantenbaby im Tierpark Berlin wiegt ca.
+ende;Named entitiy & terminology;Measuring unit;Can you lend me your five-foot tape measure?;Können Sie mir Ihr 1,5 m langes Maßband leihen?;Können Sie mir Ihr Fünf-Fuß-Maßband verleihen?;Kannst du mir dein 3-Meter-Maßband leihen?;
+ende;Named entitiy & terminology;Proper name;A popular game is South Park: The Stick of Truth.;Ein beliebtes Spiel ist South Park: Der Stab der Wahrheit.;Ein beliebtes Spiel ist South Park: The Stick of Truth.;Ein beliebtes Spiel ist South Park: Der Stock der Wahrheit.;Ein beliebtes Spiel ist South Park: Der Stick der Wahrheit.
+ende;Named entitiy & terminology;Proper name;"I recently read ""Gone with the Wind"". ";"Ich habe kürzlich ""Vom Winde verweht"" gelesen.";"Vor kurzem las ich ""Gone with the Wind"".";Ich habe kürzlich „Vom Wind verweht“ gelesen.;"Ich habe kürzlich ""Mit dem Wind gegangen""gelesen."
+ende;Named entitiy & terminology;Proper name;Do you think the Dolphins will win the game?;Glaubst du, die Dolphins werden das Spiel gewinnen?;Glauben Sie, dass die Dolphins das Spiel gewinnen werden?;Glauben Sie, die Delfine wird das Spiel gewinnen?;Glauben Sie, dass die Delphine das Spiel gewinnen werden?
+ende;Negation;Negation;John has not been listening for a while. ;John hat eine Weile nicht zugehört.;Johannes hört schon eine Weile nicht mehr zu.;John hat sich schon seit langem nicht zugegeben.;John wird nicht für eine Weile zu hören.
+ende;Negation;Negation;My parents do not like my nose ring. ;Meine Eltern mögen meinen Nasenring nicht.;;Meine Eltern tun nicht wie meine Nase Ring.;Meine Eltern sind nicht wie meine Nase.
+ende;Negation;Negation;You don't want to be surrounded by hostile countries.;Man möchte nicht von feindlichen Ländern umgeben sein.;Sie wollen nicht von feindlichen Ländern umgeben sein.;Sie wollen nicht von feindlichen Ländern umgeben.;
+ende;Non-verbal agreement;Coreference;In June, the U.S. Army named the first female infantry officer. ;Im Juni ernannte die US Army die erste weibliche Infanterieoffizierin.;Im Juni ernannte die US-Armee die erste weibliche Infanterie-Offizierin.;Im Juni hat die U.S.S. Army den ersten Infanteriebeauftragten genannt.;Im Juni nannte die US-Armee den ersten weiblichen Infanterieoffizier.
+ende;Non-verbal agreement;Coreference;My brother is a nurse in the local hospital.;Mein Bruder ist Krankenpfleger im örtlichen Krankenhaus.;;Mein Bruder ist Krankenschwester im örtlichen Krankenhaus.;
+ende;Non-verbal agreement;Coreference;I cannot find the pen, I probably lost it.;Ich kann den Stift nicht finden, ich habe ihn wahrscheinlich verloren.;Ich kann den Stift nicht finden, wahrscheinlich habe ich ihn verloren.;Ich kann den Stift nicht finden, ich habe es vermutlich verloren.;
+ende;Non-verbal agreement;Genitive;Rick’s and Steve’s cars are quite old.;Ricks und Steves Autos sind ziemlich alt.;Die Autos von Rick und Steve sind ziemlich alt.;Rick und Steve Autos sind ziemlich alt.;Die Autos von Rick's und Steve sind ziemlich alt.
+ende;Non-verbal agreement;Genitive;Hans's bike was stolen.;Das Fahrrad von Hans wurde gestohlen.;Hans' Fahrrad wurde gestohlen.;Hans Fahrrad gestohlen wurde.;Hans's Fahrrad wurde gestohlen.
+ende;Non-verbal agreement;Genitive;The boys' bikes are over there.;Die Fahrräder der Jungs sind da drüben.;Die Jungenfahrräder sind da drüben.;Die Jungen Fahrräder sind dort.;Die Jungs Fahrräder sind da drüben.
+ende;Non-verbal agreement;Possession;John drove Mary's car, as she was tired.;John fuhr Marys Auto, da sie müde war.;;John fuhr Mary Auto, als sie müde war.;
+ende;Non-verbal agreement;Possession;He accidentally burned her hair.;Er verbrannte ihr versehentlich die Haare.;Er hat versehentlich ihre Haare verbrannt.;Er hat sich aus Versehen die Haare verbrannt.;Er hat sich versehentlich die Haare verbrannt.
+ende;Non-verbal agreement;Possession;They shaved his head. ;Sie haben ihm den Kopf rasiert.;;Sie haben sich den Kopf rasiert.;
+ende;Punctuation;Quotation marks;"""What do you mean?"" he replied.";„Was meinst du damit?“, erwiderte er.;„Was meinen Sie?“, antwortete er.;„Was meinst du damit“ antwortete er.;Was meinen Sie? er antwortete.
+ende;Punctuation;Quotation marks;"John said, ""I have just finished reading 'Wuthering Heights'.""";John sagte: „Ich habe gerade 'Wuthering Heights' zu Ende gelesen.“;"John sagte: ""Ich habe gerade 'Wuthering Heights' gelesen.""";John Bowis sagte, dass ich gerade mit der Lesung 'Waffende Golsen' gelesen habe.;
+ende;Punctuation;Quotation marks;"""Is it true that they live in Munich now?"" she asked.";„Stimmt es, dass sie jetzt in München leben?“, fragte sie.;;Stimmt es, dass sie jetzt in München leben? Sie fragte.;„Stimmt es, dass sie jetzt in München leben“, fragte sie.
+ende;Subordination;Adverbial clause;As we were buying the tickets, the commercials were already beginning.;Als wir die Tickets kauften, begannen die Werbespots bereits.;Während wir die Karten kauften, fingen die Werbungen bereits an.;Als wir die Tickets kaufen würden, begannen die Werbespots bereits.;
+ende;Subordination;Adverbial clause;There may come a time when I would do this, though I can't imagine when. ;Es mag eine Zeit kommen, in der ich dies tun würde, obwohl ich mir nicht vorstellen kann, wann.;Es könnte eine Zeit kommen, in der ich dies tun würde, obwohl ich mir nicht vorstellen kann, wann.;Es mag eine Zeit kommen, wenn ich dies tun würde, wenn ich nicht, wenn sich vorstellen kann.;Es kann eine Zeit kommen, als ich dies tun würde, obwohl ich mir nicht vorstellen kann, wann.
+ende;Subordination;Adverbial clause;Since John will be working late he will eat at Subways.;Da John spät arbeiten wird, wird er bei Subways essen.;Da John zu spät arbeiten wird, wird er bei Subways essen.;Seit John arbeiten wird spät wird er bei Subways essen.;
+ende;Subordination;Cleft sentence;All I want for Christmas is you. ;Alles, was ich zu Weihnachten will, sind Sie.;Alles, was ich mir zu Weihnachten wünsche, bist du.;Alles was ich zu Weihnachten möchte bist du.;Alles was ich zu Weihnachten will bist du.
+ende;Subordination;Cleft sentence;It was meeting Jim that really made me question my relationship.;Es war das Treffen mit Jim, das mich wirklich dazu brachte, meine Beziehung in Frage zu stellen.;Es war die Begegnung mit Jim, die mich wirklich dazu brachte, meine Beziehung zu hinterfragen.;Es war die Begegnung mit Jim, dass hat mich wirklich meine Beziehung in Frage stellen.;Es traf Jim, der mich wirklich meine Beziehung in Frage stellen ließ.
+ende;Subordination;Cleft sentence;It was because she was so lonely that she decided to move out.;Weil sie so einsam war, beschloss sie auszuziehen.;Weil sie so einsam war, entschied sie sich, auszuziehen.;Weil sie so einsam war, dass sie beschloss auszuziehen.;Es war, weil sie so einsam war, dass sie beschlossen, auszuziehen.
+ende;Subordination;Contact clause;This is the recipe he was using.;Dies ist das Rezept, das er verwendet hat.;Das ist das Rezept, das er benutzt hat.;Das ist das Rezept er wurde mit.;Das ist das Rezept, mit dem er unterwegs war.
+ende;Subordination;Contact clause;Who is that man she is talking to?;Wer ist dieser Mann, mit dem sie spricht?;Wer ist der Mann, mit dem sie spricht?;Wer ist der Mann, der sie zu reden?;Mit wem spricht sie denn
+ende;Subordination;Contact clause;I would like to meet the man petting that dog.;Ich würde gerne den Mann kennenlernen, der den Hund streichelt.;Ich würde gerne den Mann treffen, der diesen Hund streichelt.;Ich möchte den Mann streichelt den Hund treffen.;Ich würde gerne den Mann kennenlernen, der diesen Hund streichelst.
+ende;Subordination;Indirect speech;Tom said he was 16.;Tom sagte, er sei 16.;Tom sagte, er sei 16 Jahre alt.;Tom sagte, er war 16.;
+ende;Subordination;Indirect speech;John said that his brother is at Leipzig university. ;John sagte, sein Bruder sei an der Universität Leipzig.;John sagte, dass sein Bruder an der Leipziger Universität ist.;John sagte, dass sein Bruder ist an der Universität Leipzig.;
+ende;Subordination;Indirect speech;He said that he had to fly home on Monday. ;Er sagte, dass er am Montag nach Hause fliegen musste.;Er sagte, dass er am Montag nach Hause fliegen müsse.;;
+ende;Subordination;Infinitive clause;Jane is sorry not to have left earlier.;Jane bedauert, nicht früher weggegangen zu sein.;Jane tut es leid, dass sie nicht früher losgefahren ist.;Jane tut mir leid, dass sie nicht früher gegangen ist.;Jane tut mir leid, nicht früher verlassen zu haben.
+ende;Subordination;Infinitive clause;You have to book early to secure a seat. ;Sie müssen früh buchen, um sich einen Sitzplatz zu sichern.;Man muss früh buchen, um sich einen Platz zu sichern.;Sie müssen früh buchen einen Platz zu sichern.;
+ende;Subordination;Infinitive clause;Your duty is to finish the work in time.;Ihre Pflicht ist es, die Arbeiten rechtzeitig abzuschließen.;Ihre Aufgabe ist es, die Arbeit in der Zeit zu beenden.;;
+ende;Subordination;Object clause;Tim loves taking long walks on Sundays.;Tim liebt es, sonntags lange Spaziergänge zu machen.;Tim macht sonntags gerne lange Spaziergänge.;Tim liebt es, lange Spaziergänge am Sonntag.;
+ende;Subordination;Object clause;Fred expected to see Ginny at the party.;Fred hat erwartet, Ginny auf der Party zu sehen.;Fred erwartete, Ginny auf der Party zu sehen.;;
+ende;Subordination;Object clause;Tom hopes that he will not fail the test. ;Tom hofft, dass er beim Test nicht durchfällt.;Tom hofft, dass er bei der Prüfung nicht durchfallen wird.;Tom hofft, dass er den Test nicht bestehen wird.;
+ende;Subordination;Pseudo-cleft sentence;What annoyed me was that she did not say sorry.;Was mich geärgert hat, war, dass sie sich nicht entschuldigt hat.;Was mich ärgerte, war, dass sie sich nicht entschuldigt hat.;Was mich ärgerte war, dass sie sich nicht entschuldigte.;Was ärgerte ich war, dass sie nicht traurig sagten.
+ende;Subordination;Pseudo-cleft sentence;What I want is a cup of coffee.;Was ich will, ist eine Tasse Kaffee.;;Was ich will ist eine Tasse Kaffee.;
+ende;Subordination;Pseudo-cleft sentence;What Lisa will do is move to Berlin.;Was Lisa tun wird, ist nach Berlin zu ziehen.;Lisa wird nach Berlin ziehen.;;
+ende;Subordination;Relative clause;Lisa gave the kid that wouldn't stop crying a candy.;Lisa gab dem Kind, das nicht aufhören wollte zu weinen, ein Bonbon.;Lisa gab dem Kind, das nicht aufhörte zu weinen, eine Süßigkeit.;Lisa gab dem Kind, das nicht aufhören wollte, eine Süßigkeit zu weinen.;Lisa gab dem Kind, das nicht aufhören würde zu weinen, ein Bonbon.
+ende;Subordination;Relative clause;The author who wrote the novel Tom Jones lived in the 18th century.;Der Autor, der den Roman Tom Jones schrieb, lebte im 18. Jahrhundert.;Der Autor des Romans Tom Jones lebte im 18. Jahrhundert.;Der Autor, der den Roman schrieb Tom Jones lebte im 18. Jahrhundert.;Der Autor, der den Roman Tom Jones schrieb, lebte im 18.
+ende;Subordination;Relative clause;Mrs. Richmond, who is 42, has three children.;Frau Richmond, die 42 Jahre alt ist, hat drei Kinder.;Mrs. Richmond, die 42 ist, hat drei Kinder.;Die 42-Jährige hat drei Kinder.;Mrs. Richmond, wer ist 42, hat drei Kinder.
+ende;Subordination;Subject clause;Other people being late was something Sam truly despised.;Andere Leute, die zu spät kamen, wurden von Sam wirklich verachtet.;Dass andere Leute zu spät kamen, war etwas, was Sam wirklich verachtete.;Andere Leute spät war etwas Sam wirklich verachtet.;Andere Leute, die zu spät kamen, waren etwas, das Sam wirklich verachtete.
+ende;Subordination;Subject clause;Who is responsible for the accident is still unclear.;Wer für den Unfall verantwortlich ist, ist noch unklar.;;Wer ist verantwortlich für den Unfall ist noch unklar.;Noch ist unklar, ob die WHO für den Unfall verantwortlich ist.
+ende;Subordination;Subject clause;Being the chairman is a huge responsibility.;Der Vorsitzende zu sein, ist eine große Verantwortung.;Vorsitzender zu sein, ist eine große Verantwortung.;Der Vorsitzende ist eine enorme Verantwortung.;
+ende;Verb tense/aspect/mood;Conditional;If I had been in Paris, I would have visited you.;Wenn ich in Paris gewesen wäre, hätte ich Sie besucht.;Wäre ich in Paris gewesen, hätte ich Sie besucht.;Wenn ich in Paris gewesen wäre, hätte ich Sie besucht haben.;
+ende;Verb tense/aspect/mood;Conditional;If you set your mind to a goal, you'll eventually achieve it.;Wenn man sich ein Ziel setzt, wird man es irgendwann auch erreichen.;Wenn du dich auf ein Ziel festlegst, wirst du es schließlich erreichen.;Wenn Sie Ihre Meinung zu einem Ziel gesetzt, werden Sie schließlich es erreichen.;Wenn Sie Ihren Geist auf ein Ziel, Sie 'll schließlich erreichen.
+ende;Verb tense/aspect/mood;Conditional;I would have sent her an invitation if I had found her address.;Ich hätte ihr eine Einladung geschickt, wenn ich ihre Adresse gefunden hätte.;;Ich hätte sie eine Einladung geschickt, wenn ich ihre Adresse gefunden hatte.;Ich würde ihr eine Einladung geschickt haben, wenn ich ihre Adresse gefunden hatte.
+ende;Verb tense/aspect/mood;Ditransitive - conditional I progressive;I would be bringing Sara a DVD.;Ich würde Sara eine DVD mitbringen.;Ich würde Sara eine DVD mitbringen.;Ich würde zu bringen Sara eine DVD.;Ich bringe Sara eine DVD mit.
+ende;Verb tense/aspect/mood;Ditransitive - conditional I progressive;You would be showing Lisa your car.;Ich würde Lisa mein Auto zeigen.;;Ich würde zeigen, Lisa mein Auto.;
+ende;Verb tense/aspect/mood;Ditransitive - conditional I progressive;She would be baking Tim a cake.;Sie würde Tim einen Kuchen backen.;;;
+ende;Verb tense/aspect/mood;Ditransitive - conditional I simple;We would mail a letter to Sam.;Wir würden Sam einen Brief schicken.;Wir würden einen Brief an Sam senden.;Wir würden einen Brief an Sam.;
+ende;Verb tense/aspect/mood;Ditransitive - conditional I simple;They would bake a cake for Tim.;Sie würden einen Kuchen für Tim backen.;Sie würden für Tim einen Kuchen backen.;Sie backen einen Kuchen für Tim.;Sie backten einen Kuchen für Tim.
+ende;Verb tense/aspect/mood;Ditransitive - conditional I simple;He would pass the ball to John.;Er würde den Ball an John weiterleiten.;Er würde den Ball an John weitergeben.;Er würde den Ball zu John passen.;
+ende;Verb tense/aspect/mood;Ditransitive - conditional II progressive;She would have been baking a cake for Tim.;Sie hätte einen Kuchen für Tim gebacken.;Sie hätte für Tim einen Kuchen gebacken.;Sie würde einen Kuchen für Tim gebacken haben.;
+ende;Verb tense/aspect/mood;Ditransitive - conditional II progressive;He would have been bringing a DVD to Sara.;Er hätte Sara eine DVD mitgebracht.;Er hätte Sara eine DVD gebracht.;Er hätte eine DVD nach Sara gebracht.;
+ende;Verb tense/aspect/mood;Ditransitive - conditional II progressive;They would have been mailing a letter to Sam.;Sie hätten Sam einen Brief geschickt.;Sie hätten einen Brief an Sam verschickt.;Sie würden gewesen sein Senden eines Briefes an Sam.;Sie hätten Sam einen Brief zugeschmendet.
+ende;Verb tense/aspect/mood;Ditransitive - conditional II simple;I would have brought a DVD to Sara.;Ich hätte Sara eine DVD mitgebracht.;ch hätte eine DVD zu Sara gebracht.;;
+ende;Verb tense/aspect/mood;Ditransitive - conditional II simple;We would have mailed a letter to Sam.;Wir hätten Sam einen Brief geschickt.;Wir hätten einen Brief an Sam verschickt.;Wir würden einen Brief an Sam geschickt haben.;Wir hätten sam einen Brief geschieden.
+ende;Verb tense/aspect/mood;Ditransitive - conditional II simple;They would have baked Tim a cake.;Sie hätten Tim einen Kuchen gebacken.;Für Tim hätten sie einen Kuchen gebacken.;;
+ende;Verb tense/aspect/mood;Ditransitive - future I progressive;She will be passing John the ball.;Sie wird John den Ball übergeben.;Sie wird John den Ball weitergeben.;;
+ende;Verb tense/aspect/mood;Ditransitive - future I progressive;I will be bringing a DVD to Sara.;Ich werde Sara eine DVD bringen.;Ich werde eine DVD zu Sara bringen.;;
+ende;Verb tense/aspect/mood;Ditransitive - future I progressive;They will be giving the book to Mary.;Sie werden Maria das Buch geben.;Sie werden das Buch an Maria weitergeben.;;
+ende;Verb tense/aspect/mood;Ditransitive - future I simple;They will pass John the ball.;Sie werden John den Ball übergeben.;Sie werden John den Ball zuspielen.;Sie werden John den Ball passieren.;
+ende;Verb tense/aspect/mood;Ditransitive - future I simple;You are going to pass John the ball.;Du gibst John den Ball.;Sie werden John den Ball weitergeben.;Du wirst John den Ball führen.;Sie sind dabei, John den Ball übergeben.
+ende;Verb tense/aspect/mood;Ditransitive - future I simple;We will bring Sara a DVD.;Wir werden Sara eine DVD mitbringen.;Wir werden Sara eine DVD mitbringen.;Wir bringen Sara eine DVD mit.;
+ende;Verb tense/aspect/mood;Ditransitive - past perfect simple;We had mailed Sam a letter.;Wir hatten Sam einen Brief geschickt.;Wir hatten Sam einen Brief gemailt.;;
+ende;Verb tense/aspect/mood;Ditransitive - past perfect simple;They had baked a cake for Tim.;Sie hatten einen Kuchen für Tim gebacken.;Sie hatten für Tim einen Kuchen gebacken.;;
+ende;Verb tense/aspect/mood;Ditransitive - past perfect simple;He had given Mary the book.;Er hatte Maria das Buch gegeben.;Er hatte Mary das Buch geschenkt.;;
+ende;Verb tense/aspect/mood;Ditransitive - present perfect progressive;We have been baking Tim a cake.;Wir haben Tim einen Kuchen gebacken.;Wir haben für Tim einen Kuchen gebacken.;;
+ende;Verb tense/aspect/mood;Ditransitive - present perfect progressive;I have been baking Tim a cake.;Ich habe Tim einen Kuchen gebacken.;Ich habe für Tim einen Kuchen gebacken.;;
+ende;Verb tense/aspect/mood;Ditransitive - present perfect progressive;She has been baking Tim a cake.;Sie hat Tim einen Kuchen gebacken.;Sie hat für Tim einen Kuchen gebacken.;Sie hat einen Kuchen aufgewendet.;
+ende;Verb tense/aspect/mood;Ditransitive - present perfect simple;You have passed John the ball.;Sie haben John den Ball übergeben.;Sie haben John den Ball zugespielt.;Du hast John den Ball bestanden.;Du hast John den Ball geführt.
+ende;Verb tense/aspect/mood;Ditransitive - present perfect simple;They have mailed Sam a letter.;Sie haben Sam einen Brief geschickt.;;Sie haben Sam einen Brief zuschiebe.;
+ende;Verb tense/aspect/mood;Ditransitive - present perfect simple;We have given the book to Mary.;Wir haben Maria das Buch gegeben.;Wir haben das Buch Mary gegeben.;Wir haben das Buch an Mary gegeben.;Wir haben das Buch an Maria gegeben.
+ende;Verb tense/aspect/mood;Ditransitive - present progressive;They are mailing a letter to Sam.;Sie schicken einen Brief an Sam.;Sie verschicken einen Brief an Sam.;;
+ende;Verb tense/aspect/mood;Ditransitive - present progressive;I am passing John the ball.;Ich übergebe John den Ball.;Ich spiele John den Ball zu.;Ich überhole John den Ball.;Ich passiere John den Ball.
+ende;Verb tense/aspect/mood;Ditransitive - present progressive;She is bringing Sara a DVD.;Sie bringt Sara eine DVD mit.;Sie bringt Sara eine DVD.;;
+ende;Verb tense/aspect/mood;Ditransitive - simple past;They passed the ball to John.;Sie gaben den Ball an John weiter.;Sie haben den Ball an John weitergegeben.;Sie gaben den Ball zu John.;
+ende;Verb tense/aspect/mood;Ditransitive - simple past;Uncle Jim gave a present to Mary.;Onkel Jim gab Mary ein Geschenk.;Onkel Jim schenkte Mary ein Geschenk.;Onkel Jim hat ein Geschenk für Mary.;Onkel Jim gab ein Geschenk zu Mary.
+ende;Verb tense/aspect/mood;Ditransitive - simple past;You mailed a letter to Sam.;Du hast Sam einen Brief geschickt.;Sie schickten einen Brief an Sam.;Du schickst einen Brief an Sam.;
+ende;Verb tense/aspect/mood;Ditransitive - simple present;He gives the book to Mary.;Er gibt Maria das Buch.;Er schenkt das Buch Maria.;;
+ende;Verb tense/aspect/mood;Ditransitive - simple present;We bring Sara a DVD.;Wir bringen Sara eine DVD mit.;Wir bringen Sara eine DVD.;;
+ende;Verb tense/aspect/mood;Ditransitive - simple present;We show our car to Lisa.;Wir zeigen Lisa unser Auto.;;;
+ende;Verb tense/aspect/mood;Imperative;Come here.;Kommen Sie hierher.;;Herkommen.;
+ende;Verb tense/aspect/mood;Imperative;Don't you go in there!;Gehen Sie da nicht rein!;Geh da nicht rein!;Sie nicht da rein!;Gehst du da nicht rein!
+ende;Verb tense/aspect/mood;Imperative;Don't get ill.;Nicht krank werden.;Bloß nicht krank werden.;Sie nicht krank werden.;
+ende;Verb tense/aspect/mood;Intransitive - conditional I progressive;He would be laughing.;Er würde lachen.;;;
+ende;Verb tense/aspect/mood;Intransitive - conditional I progressive;We would be falling.;Wir würden fallen.;;Wir würden gefallen sein.;
+ende;Verb tense/aspect/mood;Intransitive - conditional I progressive;They would be running.;Sie würden laufen.;Sie würden rennen.;;
+ende;Verb tense/aspect/mood;Intransitive - conditional I simple;We would eat.;Wir würden essen.;;Wir wurden Essen.;
+ende;Verb tense/aspect/mood;Intransitive - conditional I simple;I would run.;Ich würde laufen.;Ich würde weglaufen.;Ich würde Rennen.;
+ende;Verb tense/aspect/mood;Intransitive - conditional I simple;They would cry.;Sie würden weinen.;;Sie weinten.;
+ende;Verb tense/aspect/mood;Intransitive - future I progressive;We will be falling.;Wir werden fallen.;;Wir werden gefallen sein.;Wir werden abgefallen sein.
+ende;Verb tense/aspect/mood;Intransitive - future I progressive;She will be laughing.;Sie wird lachen.;;Sie wird zu lachen.;
+ende;Verb tense/aspect/mood;Intransitive - future I progressive;You will be running.;Sie werden laufen.;Du wirst rennen.;Du wirst gerannt sein.;Sie werden gelaufen sein.
+ende;Verb tense/aspect/mood;Intransitive - future I simple;You will arrive.;Sie werden ankommen.;Ihr werdet ankommen.;;
+ende;Verb tense/aspect/mood;Intransitive - future I simple;I am going to cry.;Ich werde jetzt weinen.;Ich werde weinen.;Ich fange an zu weinen.;
+ende;Verb tense/aspect/mood;Intransitive - future I simple;We are going to eat.;Wir werden essen.;Wir werden essen gehen.;Wir gehen zum Essen.;Wir gehen essen.
+ende;Verb tense/aspect/mood;Intransitive - future II progressive;We will have been running.;Wir werden gelaufen sein.;Wir werden gerannt sein.;Wir würden gelaufen sein.;Wir würden losgerannt sein.
+ende;Verb tense/aspect/mood;Intransitive - future II progressive;You will have been falling.;Du wirst gefallen sein.;Sie werden gestürzt sein.;Du würdest herabgefallen sein.;Ihr würdet gefallen sein.
+ende;Verb tense/aspect/mood;Intransitive - future II progressive;I will have been laughing.;Ich werde gelacht haben.;;Ich würde gelacht haben.;
+ende;Verb tense/aspect/mood;Intransitive - future II simple;They will have eaten.;Sie werden gegessen haben.;Ich werde gerannt sein.;Ich bin gelaufen.;
+ende;Verb tense/aspect/mood;Intransitive - future II simple;The manager will not have come.;Der Manager wird nicht gekommen sein.;;Der Manager ist nicht gekommen.;
+ende;Verb tense/aspect/mood;Intransitive - future II simple;He will have eaten.;Er wird gegessen haben.;;;
+ende;Verb tense/aspect/mood;Intransitive - past perfect progressive;I had been crying.;Ich hatte geweint.;;Ich hätte geweint.;
+ende;Verb tense/aspect/mood;Intransitive - past perfect progressive;He had been running.;Er war gerannt.;Er war gelaufen.;Er war auf der Flucht.;
+ende;Verb tense/aspect/mood;Intransitive - past perfect progressive;You had been baking Tim a cake.;Sie hatten Tim einen Kuchen gebacken.;Sie hatten für Tim einen Kuchen gebacken.;Du hast Tim einen Kuchen gebacken.;Du hättest Tim einen Kuchen gebacken.
+ende;Verb tense/aspect/mood;Intransitive - past perfect simple;They had cried.;Sie hatten geweint.;;Sie hätten geweint.;Sie / sie hatten geweint.
+ende;Verb tense/aspect/mood;Intransitive - past perfect simple;They had run.;Sie waren gerannt.;Sie waren weggelaufen.;Sie / sie hatten gelaufen.;
+ende;Verb tense/aspect/mood;Intransitive - past perfect simple;We had slept.;Wir hatten geschlafen.;;;
+ende;Verb tense/aspect/mood;Intransitive - past progressive;They were standing at the window.;Sie standen am Fenster.;Sie haben am Fenster gestanden.;;
+ende;Verb tense/aspect/mood;Intransitive - past progressive;We were arriving.;Wir kamen an.;Wir kamen gerade an.;Wir waren angekommen.;
+ende;Verb tense/aspect/mood;Intransitive - past progressive;I was falling.;Ich bin gefallen.;Ich war am Fallen.;Ich bin hingefallen.;
+ende;Verb tense/aspect/mood;Intransitive - present perfect simple;He has run.;Er ist geflohen.;Er ist gelaufen.;;
+ende;Verb tense/aspect/mood;Intransitive - present perfect simple;We have run.;Wir sind gelaufen.;Wir sind gerannt.;Ausgeführt von.;
+ende;Verb tense/aspect/mood;Intransitive - present perfect simple;You have arrived.;Sie sind angekommen.;Du bist angekommen.;;
+ende;Verb tense/aspect/mood;Intransitive - present progressive;The manager and the consultant are sleeping at a hotel.;Der Manager und der Berater schlafen in einem Hotel.;;Der Manager und die Berater sind in einem Hotel schlafen.;
+ende;Verb tense/aspect/mood;Intransitive - present progressive;She is being brave.;Sie ist mutig.;Sie ist sehr tapfer.;Sie wird mutig.;
+ende;Verb tense/aspect/mood;Intransitive - present progressive;He is programming in Java.;Er programmiert in Java.;Er programmiert auf Java.;Er ist die Programmierung in Java.;
+ende;Verb tense/aspect/mood;Intransitive - simple past;I ate.;Ich habe gegessen.;Ich aß.;Ich as.;
+ende;Verb tense/aspect/mood;Intransitive - simple past;They slept the whole day.;Sie schliefen den ganzen Tag.;Sie haben den ganzen Tag geschlafen.;;
+ende;Verb tense/aspect/mood;Intransitive - simple past;Fido bit me.;Fido hat mich gebissen.;Fido biss mich.;;
+ende;Verb tense/aspect/mood;Intransitive - simple present;They sleep from midnight to seven.;Sie schlafen von Mitternacht bis sieben Uhr.;Sie schlafen von Mitternacht bis sieben.;;
+ende;Verb tense/aspect/mood;Intransitive - simple present;You arrive.;Sie kommen an.;Man kommt an.;;
+ende;Verb tense/aspect/mood;Intransitive - simple present;He laughs. ;Er lacht.;;;
+ende;Verb tense/aspect/mood;Modal;He shall read.;Er soll lesen.;Er wird lesen.;;
+ende;Verb tense/aspect/mood;Modal;You may think.;Du magst denken.;Sie denken vielleicht.;;
+ende;Verb tense/aspect/mood;Modal;You must know it.;Sie müssen es wissen.;Ihr müsst es wissen.|;;
+ende;Verb tense/aspect/mood;Modal negated;He might not dance.;Vielleicht tanzt er nicht.;Er tanzt vielleicht nicht.;Er darf nicht tanzen.;Er konnte nicht tanzen.
+ende;Verb tense/aspect/mood;Modal negated;They may not think.;Sie dürfen nicht denken.;;Sie mögen nicht denken.;Sie können nicht denken.
+ende;Verb tense/aspect/mood;Modal negated;We are not able to know it.;Wir können es nicht wissen.;Wir sind nicht in der Lage, es zu wissen.;;
+ende;Verb tense/aspect/mood;Reflexive - conditional I progressive;He would be teaching himself Spanish.;Er würde sich selbst Spanisch beibringen.;Er würde sich Spanisch selbst beibringen.;Er bringt sich selbst Spanisch bei.;
+ende;Verb tense/aspect/mood;Reflexive - conditional I progressive;We would be teaching ourselves Spanish.;Wir würden uns Spanisch beibringen.;Wir würden uns selbst Spanisch beibringen.;;
+ende;Verb tense/aspect/mood;Reflexive - conditional I progressive;They would be teaching themselves Spanish.;Sie würden sich selbst Spanisch beibringen.;Sie würden sich Spanisch beibringen.;;
+ende;Verb tense/aspect/mood;Reflexive - conditional I simple;I would dry myself.;Ich würde mich trocknen.;Ich würde mich selbst trocknen.;Ich trocknen mich selbst.;
+ende;Verb tense/aspect/mood;Reflexive - conditional I simple;He would wash himself.;Er würde sich waschen.;;Er wusch sich.;
+ende;Verb tense/aspect/mood;Reflexive - conditional I simple;You would prepare yourselves for the game.;Ihr würdet euch auf das Spiel vorbereiten.;Sie würden sich auf das Spiel vorbereiten.;Du würdest dich auf das Spiel vorbereiten.;
+ende;Verb tense/aspect/mood;Reflexive - conditional II progressive;I would have been drying myself.;Ich hätte mich getrocknet.;Ich hätte mich selbst abgetrocknet.;Ich hätte mich selbst ausgetrocknet.;
+ende;Verb tense/aspect/mood;Reflexive - conditional II progressive;You would have been preparing yourself for the game.;Sie hätten sich auf das Spiel vorbereitet.;Du hättest dich auf das Spiel vorbereitet;Sie würden sich für das Spiel vorbereitet haben.;
+ende;Verb tense/aspect/mood;Reflexive - conditional II progressive;They would have been drying themselves. ;Sie hätten sich selbst getrocknet.;Sie hätten sich selbst ausgetrocknet.;Sie wären selbst auf dem Trockenen gewesen.;
+ende;Verb tense/aspect/mood;Reflexive - conditional II simple;They would have dried themselves. ;Sie hätten sich selbst getrocknet.;Sie hätten sich getrocknet.;;
+ende;Verb tense/aspect/mood;Reflexive - conditional II simple;I would have taught myself Spanish.;Spanisch hätte ich mir selbst beigebracht.;Ich hätte mir Spanisch beigebracht.;;
+ende;Verb tense/aspect/mood;Reflexive - conditional II simple;You would have introduced yourselves.;Sie hätten sich vorgestellt.;Ihr hättet euch vorgestellt.;Du hättest dich vorgestellt.;
+ende;Verb tense/aspect/mood;Reflexive - future I progressive;You will be preparing yourself for the game.;Sie werden sich auf das Spiel vorbereiten.;Sie werden sich für das Spiel vorbereiten.;Sie bereiten sich für das Spiel.;Sie bereiten sich auf das Spiel vor.
+ende;Verb tense/aspect/mood;Reflexive - future I progressive;You will be drying yourselves.;Ihr werdet euch selbst trocknen.;Sie werden sich selbst abtrocknen.;Ihr werdet euch austrocknen.;
+ende;Verb tense/aspect/mood;Reflexive - future I progressive;He will be washing himself.;Er wird sich waschen.;Er wird sich selbst waschen.;;
+ende;Verb tense/aspect/mood;Reflexive - future I simple;They are going to dress themselves.;Sie werden sich anziehen.;Sie werden sich kleiden.;;
+ende;Verb tense/aspect/mood;Reflexive - future I simple;I am going to dry myself.;Ich werde mich trocknen.;Ich werde mich selbst trocknen.;Ich gehe mich abtrocknen.;
+ende;Verb tense/aspect/mood;Reflexive - future I simple;She will introduce herself. ;Sie wird sich vorstellen.;;;
+ende;Verb tense/aspect/mood;Reflexive - future II progressive;They will have been dressing themselves.;Sie werden sich angezogen haben.;Sie werden sich selbst angezogen haben.;Sie würden sich gekleidet haben.;Sie würden sich angezogen haben.
+ende;Verb tense/aspect/mood;Reflexive - future II progressive;She will have been drying herself. ;Sie wird sich selbst getrocknet haben.;Sie wird sich selbst abgetrocknet haben.;Sie würde sich getrocknet haben.;Sie würde sich eingetrocknet haben.
+ende;Verb tense/aspect/mood;Reflexive - future II progressive;He will have been teaching himself Spanish.;Er wird sich selbst Spanisch beigebracht haben.;Er wird sich Spanisch beigebracht haben.;;
+ende;Verb tense/aspect/mood;Reflexive - future II simple;You will have taught yourselves Spanish.;Sie werden sich Spanisch beigebracht haben.;Ihr werdet euch Spanisch selbst beigebracht haben.;Sie haben sich Spanisch beigebracht.;Sie haben sich selbst Spanisch beigebracht.
+ende;Verb tense/aspect/mood;Reflexive - future II simple;I will have introduced myself.;Ich werde mich vorgestellt haben.;;Ich habe mich vorgestellt.;
+ende;Verb tense/aspect/mood;Reflexive - future II simple;She will have dressed herself.;Sie wird sich angezogen haben.;Sie wird sich gekleidet haben.;;
+ende;Verb tense/aspect/mood;Reflexive - past perfect simple;They had taught themselves Spanish.;Sie hatten sich Spanisch selbst beigebracht.;Spanisch hatten sie sich selbst beigebracht.;;
+ende;Verb tense/aspect/mood;Reflexive - past perfect simple;You had dressed yourself.;Du hattest dich selbst angezogen.;Sie hatten sich angezogen.;;
+ende;Verb tense/aspect/mood;Reflexive - past perfect simple;We had taught ourselves Spanish.;Wir hatten uns Spanisch beigebracht.;Wir hatten uns spanisch beigebracht.;;
+ende;Verb tense/aspect/mood;Reflexive - present perfect simple;You have introduced yourself. ;Sie haben sich vorgestellt.;Du hast dich vorgestellt.;;
+ende;Verb tense/aspect/mood;Reflexive - present perfect simple;You have introduced yourselves. ;Ihr habt euch vorgestellt.;Sie haben sich vorgestellt.;;
+ende;Verb tense/aspect/mood;Reflexive - present perfect simple;She has introduced herself.;Sie hat sich vorgestellt.;;;
+ende;Verb tense/aspect/mood;Reflexive - simple past;She dried herself. ;Sie trocknete sich ab.;Sie trocknete sich.;Sie trocknete selbst.;Sie trocknete sich aus.
+ende;Verb tense/aspect/mood;Reflexive - simple past;They dried themselves. ;Sie trockneten sich ab.;Sie haben sich selbst getrocknet.;;
+ende;Verb tense/aspect/mood;Reflexive - simple past;I dried myself.;Ich habe mich abgetrocknet.;Ich habe mich selbst getrocknet.;;
+ende;Verb tense/aspect/mood;Reflexive - simple present;You wash yourselves.;Sie waschen sich.;Ihr wascht euch.;Ihr wäscht euch.;Du waschst dich.
+ende;Verb tense/aspect/mood;Reflexive - simple present;They dress themselves.;Sie kleiden sich.;Sie ziehen sich selbst an.;;
+ende;Verb tense/aspect/mood;Reflexive - simple present;She dries herself. ;Sie trocknet sich selbst.;Sie trocknet sich ab.;Sie trocknet selbst.;Sie trocknet sich aus.
+ende;Verb tense/aspect/mood;Transitive - conditional I progressive;I would be playing the piano.;Ich würde Klavier spielen.;Ich würde auf dem Klavier spielen.;;
+ende;Verb tense/aspect/mood;Transitive - conditional I progressive;He would be kicking Tim.;Er würde Tim treten.;Er würde Tim kicken.;Er würde gegen Tim treten.;
+ende;Verb tense/aspect/mood;Transitive - conditional I progressive;We would be playing the piano.;Wir würden Klavier spielen.;Wir würden auf dem Klavier spielen.;;
+ende;Verb tense/aspect/mood;Transitive - conditional I simple;He would play the piano.;Er würde Klavier spielen.;Er würde auf dem Klavier spielen.;Er spielte Klavier.;
+ende;Verb tense/aspect/mood;Transitive - conditional I simple;They would paint the house.;Sie würden das Haus malen.;Sie würden das Haus streichen.;Sie malten das Haus.;
+ende;Verb tense/aspect/mood;Transitive - conditional I simple;You would kick Tim.;Du würdest Tim treten.;Sie würden Tim treten.;;
+ende;Verb tense/aspect/mood;Transitive - conditional II simple;You would have painted the house.;Sie hätten das Haus gemalt.;Sie würden das Haus gestrichen haben.;;
+ende;Verb tense/aspect/mood;Transitive - conditional II simple;I would have painted the house.;Ich hätte das Haus gemalt.;Ich hätte das Haus gestrichen.;;
+ende;Verb tense/aspect/mood;Transitive - conditional II simple;She would have painted the house.;Sie hätte das Haus gemalt.;Sie hätte das Haus gestrichen.;;
+ende;Verb tense/aspect/mood;Transitive - future I simple;He is going to paint the house.;Er wird das Haus streichen.;Er wird das Haus bemalen.;Er wird das Haus zu malen.;Er ist dabei, das Haus zu streichen.
+ende;Verb tense/aspect/mood;Transitive - future I simple;You will kick Tim.;Du wirst Tim kicken.;Sie werden Tim treten.;;
+ende;Verb tense/aspect/mood;Transitive - future I simple;We will play the piano.;Wir werden Klavier spielen.;Wir werden auf dem Klavier spielen.;;
+ende;Verb tense/aspect/mood;Transitive - future I progressive;She will be painting the house.;Sie wird das Haus streichen.;Sie wird das Haus malen.;;
+ende;Verb tense/aspect/mood;Transitive - future I progressive;You will be throwing the ball.;Du wirst den Ball werfen.;Sie werden den Ball werfen.;Du wirst den Ball geworfen haben.;Sie werden den Ball zu werfen.
+ende;Verb tense/aspect/mood;Transitive - future I progressive;We will be kicking Tim.;Wir werden Tim treten.;Wir werden Tim kicken.;Wir werden gegen Tim antreten.;
+ende;Verb tense/aspect/mood;Transitive - future II simple;I will have written a letter.;Ich werde einen Brief geschrieben haben.;;Ich habe einen Brief geschrieben.;
+ende;Verb tense/aspect/mood;Transitive - future II simple;You will have eaten the potatoes.;Sie werden die Kartoffeln gegessen haben.;Du wirst die Kartoffeln gegessen haben.;Sie haben die Kartoffeln gegessen.;
+ende;Verb tense/aspect/mood;Transitive - future II simple;They will have painted the house.;Sie werden das Haus gestrichen haben.;Sie werden das Haus gemalt haben.;;
+ende;Verb tense/aspect/mood;Transitive - future II progressive;I will have been painting the house.;Ich werde das Haus gestrichen haben.;Ich werde das Haus bemalt haben.;Ich würde das Haus gestrichen haben.;Ich würde das Haus gemalt haben.
+ende;Verb tense/aspect/mood;Transitive - future II progressive;She will have been painting the house.;Sie wird das Haus gestrichen haben.;Sie wird das Haus gemalt haben.;;
+ende;Verb tense/aspect/mood;Transitive - future II progressive;They will have been painting the house.;Sie werden das Haus gestrichen haben.;Sie werden das Haus bemalt haben.;Sie würden das Haus gemalt haben.;
+ende;Verb tense/aspect/mood;Transitive - past perfect progressive;He had been playing the piano.;Er hatte Klavier gespielt.;Er hatte auf dem Klavier gespielt.;Er spielte Klavier.;
+ende;Verb tense/aspect/mood;Transitive - past perfect progressive;I had been painting the house.;Ich hatte das Haus bemalt.;Ich hatte das Haus gestrichen.;;
+ende;Verb tense/aspect/mood;Transitive - past perfect progressive;You had been writing a letter.;Sie hatten einen Brief geschrieben.;Du hattest einen Brief geschrieben.;Du hättest einen Brief geschrieben.;Sie hätten einen Brief geschrieben.
+ende;Verb tense/aspect/mood;Transitive - present perfect progressive;You have been throwing the ball.;Du hast den Ball geworfen.;Sie haben den Ball geworfen.;;
+ende;Verb tense/aspect/mood;Transitive - present perfect progressive;He has been eating the potatoes.;Er hat die Kartoffeln gegessen.;;;
+ende;Verb tense/aspect/mood;Transitive - present perfect progressive;They have been writing a letter.;Sie haben einen Brief geschrieben.;;;
+ende;Verb tense/aspect/mood;Transitive - present perfect simple;You have painted the house.;Du hast das Haus gemalt.;Sie haben das Haus gestrichen.;;
+ende;Verb tense/aspect/mood;Transitive - present perfect simple;She has played the piano.;Sie hat Klavier gespielt.;Sie hat auf dem Klavier gespielt.;Sie spielt Klavier.;
+ende;Verb tense/aspect/mood;Transitive - present perfect simple;I have eaten the potatoes.;Ich habe die Kartoffeln gegessen.;Ich habe die Kartoffeln aufgegessen.;;
+ende;Verb tense/aspect/mood;Transitive - present progressive;He is eating the potatoes.;Er isst die Kartoffeln.;Er frisst gerade die Kartoffeln.;;
+ende;Verb tense/aspect/mood;Transitive - present progressive;You are watching a video.;Du siehst dir ein Video an.;Sie schauen sich ein Video an.;;
+ende;Verb tense/aspect/mood;Transitive - present progressive;You are washing your car. ;Sie waschen Ihr Auto.;Du wäschst dein Auto.;Du waschst dein Auto.;
+ende;Verb tense/aspect/mood;Transitive - simple past;He threw the ball.;Er warf den Ball.;Er hat den Ball geworfen.;Er warf den ball.;
+ende;Verb tense/aspect/mood;Transitive - simple past;You repaired cars. ;Sie reparierten Autos.;Sie haben Autos repariert.;Sie repariert Autos.;
+ende;Verb tense/aspect/mood;Transitive - simple past;You ate the potatoes.;Du hast die Kartoffeln gegessen.;Sie aßen die Kartoffeln.;Sie haben die Kartoffeln aßen.;
+ende;Verb tense/aspect/mood;Transitive - simple present;We play the piano.;Wir spielen Klavier.;Wir spielen auf dem Klavier.;Wir spielen das Klavier.;
+ende;Verb tense/aspect/mood;Transitive - simple present;They grow tomatoes.;Sie bauen Tomaten an.;;Sie wachsen Tomaten.;
+ende;Verb tense/aspect/mood;Transitive - simple present;I paint the house.;Ich streiche das Haus.;Ich streiche das Haus.;;
+ende;Verb valency;Case government;What is Lisa terrified of?;Wovor hat Lisa Angst?;Wovor hat Lisa panische Angst?;Was ist Lisa erschrocken von?;Woraus hat Lisa Angst?
+ende;Verb valency;Case government;I wanted him to finish his homework.;Ich wollte, dass er seine Hausaufgaben macht.;Er sollte seine Hausaufgaben fertig machen.;Ich wollte, dass er seine Hausaufgaben beenden.;
+ende;Verb valency;Case government;The manager suspects the president of theft.;Der Manager verdächtigt den Präsidenten des Diebstahls.;;Der Manager vermutet, den Präsidenten des Diebstahls.;Der Manager vermutet den Präsidenten des Diebstahls.
+ende;Verb valency;Catenative verb;He admitted taking the money.;Er gibt zu, das Geld genommen zu haben.;Er gab zu, das Geld genommen zu haben.;Er gab zu, das Geld zu nehmen.;Er gab zu, das Geld nehmen.
+ende;Verb valency;Catenative verb;I stopped to read my book.;Ich blieb stehen, um mein Buch zu lesen.;Ich hielt an, um mein Buch zu lesen.;Ich habe aufgehört, mein Buch zu lesen.;Ich hörte auf, mein Buch zu lesen.
+ende;Verb valency;Catenative verb;It tends to snow here in winter.;Es neigt dazu, hier im Winter zu schneien.;Im Winter schneit es hier tendenziell.;Es neigt dazu, Schnee hier im Winter.;
+ende;Verb valency;Middle voice;The wall did not paint easily.;Die Wand war nicht leicht zu streichen.;Die Wand ließ sich nicht leicht streichen.;Die Wand färbte nicht leicht.;Die Wand hat nicht leicht gestrichen.
+ende;Verb valency;Middle voice;The new bike rides well.;Das neue Bike fährt sich gut.;Das neue Rad fährt sich gut.;Das neue Bike fährt gut.;Das neue Fahrrad fährt gut.
+ende;Verb valency;Middle voice;This material won't wash.;Dieses Material kann nicht gewaschen werden.;Dieses Material lässt sich nicht waschen.;Dieses Material wird nicht gewaschen.;Dieses material wird nicht waschen.
+ende;Verb valency;Passive voice;The customer was being helped by the salesman.;Dem Kunden wurde von dem Verkäufer geholfen.;Der Kunde wurde vom Verkäufer bedient.;Der Kunde wurde durch den Verkufer geholfen.;Dem Kunden wurde der Verkäufer geholfen.
+ende;Verb valency;Passive voice;Have you ever been kicked by an elephant?;Wurden Sie schon einmal von einem Elefanten getreten?;Bist du jemals von einem Elefanten getreten worden?;Haben Sie schon einmal von einem Elefanten getreten?;
+ende;Verb valency;Passive voice;The students are taught by the professor.;Die Studenten werden vom Professor unterrichtet.;Die Studierenden werden von der Professorin oder dem Professor unterrichtet.;Die Studenten werden durch den Professor unterrichtet.;
+ende;Verb valency;Resultative;The scientific evidence proved him guilty. ;Die wissenschaftlichen Beweise bewiesen, dass er schuldig war.;Die wissenschaftlichen Beweise bewiesen seine Schuld.;Die wissenschaftlichen Erkenntnisse haben ihn schuldig gemacht.;Die wissenschaftlichen Beweise haben ihn schuldig gesprochen
+ende;Verb valency;Resultative;John sang the baby to sleep.;John sang das Baby in den Schlaf.;John hat das Baby in den Schlaf gesungen.;John sang das Baby zum Schlafen.;John sang das Baby zu schlafen.
+ende;Verb valency;Resultative;The puddle froze solid. ;Die Pfütze fror fest.;Die Pfütze ist fest gefroren.;Die Pfütze erstarrten Feststoff.;Die Pfütze gefror fest.
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
